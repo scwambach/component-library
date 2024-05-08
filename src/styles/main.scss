@@ -1,1 +1,8 @@
+@import "./settings";
+@import "./reset";
+@import "./mixins";
 @import "./global";
+
+@import "../components/Box/Box";
+@import "../components/Flex/Flex";
+@import "../components/Grid/Grid";

@@ -1,0 +1,26 @@
+@mixin radius4 {
+  border-radius: var(--border-radius-1);
+}
+
+@mixin radius8 {
+  border-radius: var(--border-radius-2);
+}
+
+@mixin radius12 {
+  border-radius: var(--border-radius-3);
+}
+
+@mixin radius4overflow {
+  @include radius4;
+  overflow: hidden;
+}
+
+@mixin radius8overflow {
+  @include radius8;
+  overflow: hidden;
+}
+
+@mixin radius12overflow {
+  @include radius12;
+  overflow: hidden;
+}
