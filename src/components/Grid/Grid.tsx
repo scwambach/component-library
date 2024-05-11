@@ -1,5 +1,5 @@
-import { Box } from "@components/Box/Box";
-import { GridProps } from "@utils/types";
+import { Box } from "../Box/Box";
+import { GridProps } from "../../utils/types";
 
 export const Grid = ({
   ariaLabel,

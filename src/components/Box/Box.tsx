@@ -1,4 +1,4 @@
-import { BoxProps } from "@utils/types";
+import { BoxProps } from "../../utils/types";
 
 export const Box = ({
   className,

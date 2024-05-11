@@ -1,5 +1,5 @@
-import { Box } from "@components/Box/Box";
-import { ContainerProps } from "@utils/types";
+import { Box } from "../Box/Box";
+import { ContainerProps } from "../../utils/types";
 
 export const Container = ({
   children,
