@@ -1,12 +1,5 @@
 import { Box } from "@components/Box/Box";
-import { ComponentProps, ContainerClasses } from "@utils/types";
-import { ReactNode } from "react";
-
-export interface ContainerProps extends ComponentProps {
-  containerClass?: ContainerClasses;
-  children: ReactNode;
-  padded?: boolean;
-}
+import { ContainerProps } from "@utils/types";
 
 export const Container = ({
   children,

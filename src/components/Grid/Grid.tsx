@@ -1,9 +1,5 @@
 import { Box } from "@components/Box/Box";
-import { ColumnSize, FlexGridProps } from "@utils/types";
-
-export interface GridProps extends FlexGridProps {
-  columns?: ColumnSize;
-}
+import { GridProps } from "@utils/types";
 
 export const Grid = ({
   ariaLabel,
