@@ -1,64 +1,77 @@
-:root {
-  --size-micro: 240px;
-  --size-xxs: 320px;
-  --size-xs: 480px;
-  --size-sm: 576px;
-  --size-md: 768px;
-  --size-lg: 992px;
-  --size-xl: 1200px;
-  --size-xxl: 1440px;
-  --size-mega: 2000px;
+html {
+  background-color: $black;
 
-  --container-normal: 1440px;
-  --container-narrow: 1200px;
-  --container-narrower: 768px;
-  --container-wide: 1776px;
-  --container-wider: 1968px;
+  main {
+    background-color: $eggShell;
+  }
+}
 
-  --error: #b8343a;
-  --error-light: #f9d6d2;
-  --warning: #f7a25d;
-  --warning-light: #f9e3d0;
-  --success: #0f7173;
-  --success-light: #d5f0f0;
-  --link: #12657c;
-  --link-light: #d5e3f7;
-  --info: var(--link-light);
-  --white: #fff;
-  --black: #000;
-  --gray: #dedede;
-  --gray-dark: #b6b6b6;
+* {
+  &:focus {
+    outline-offset: $size-2;
+    outline: $size-4 solid $red;
+  }
+}
 
-  --primary: var(--link);
-  --primary-light: var(--link-light);
-  --secondary: var(--success);
-  --secondary-light: var(--success-light);
-  --tertiary: var(--warning);
-  --tertiary-light: var(--warning-light);
+::selection {
+  background: $orange;
+  color: $white;
+  text-shadow: -1px 1px 3px $black;
+}
 
-  --line-height-single: 1;
-  --line-height-base: 1.3;
-  --line-height-tight: 1.1;
-  --line-height-loose: 1.5;
+#bodyContent {
+  outline: none;
+}
 
-  --vertical-spacing: 80px;
-  --vertical-spacing-mobile: 40px;
+.hide {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  visibility: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 
-  --border-radius-1: 4px;
-  --border-radius-2: 8px;
-  --border-radius-3: 12px;
+.container {
+  width: 100%;
+  max-width: $xxl;
+  padding: 0 $size-32;
+  margin: 0 auto;
+  position: relative;
 
-  --gap-micro: 4px;
-  --gap-xxs: 16px;
-  --gap-xs: 20px;
-  --gap-sm: 32px;
-  --gap-md: 40px;
-  --gap-lg: 52px;
-  --gap-xl: 72px;
-  --gap-xxl: 84px;
-  --gap-mega: 120px;
+  &.padded {
+    padding-top: $vertical-spacing;
+    padding-bottom: $vertical-spacing;
 
-  --container-padding-x: 32px;
+    @media screen and (max-width: ($md - 1)) {
+      padding-top: $vertical-spacing-mobile;
+      padding-bottom: $vertical-spacing-mobile;
+    }
+  }
+
+  &.wide {
+    max-width: $xl + $sm;
+  }
+
+  &.wider {
+    max-width: $xl + $md;
+  }
+
+  &.narrow {
+    max-width: $xl;
+  }
+
+  &.narrower {
+    max-width: $md;
+  }
+
+  &.full {
+    max-width: 100%;
+  }
 }
 
 .gap-none {
@@ -66,37 +79,87 @@
 }
 
 .gap-micro {
-  gap: var(--gap-micro);
+  gap: $size-4;
 }
 
 .gap-xxs {
-  gap: var(--gap-xxs);
+  gap: $size-16;
 }
 
 .gap-xs {
-  gap: var(--gap-xs);
+  gap: $size-20;
 }
 
 .gap-sm {
-  gap: var(--gap-sm);
+  gap: $size-32;
 }
 
 .gap-md {
-  gap: var(--gap-md);
+  gap: $size-40;
 }
 
 .gap-lg {
-  gap: var(--gap-lg);
+  gap: $size-52;
 }
 
 .gap-xl {
-  gap: var(--gap-xl);
+  gap: $size-72;
 }
 
 .gap-xxl {
-  gap: var(--gap-xxl);
+  gap: $size-84;
 }
 
 .gap-mega {
-  gap: var(--gap-mega);
+  gap: $size-120;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.skipToMain {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  z-index: 999;
+
+  &:focus {
+    top: $size-10;
+    left: $size-10;
+  }
+}
+
+.desktopOnly {
+  @media screen and (max-width: ($md - 1)) {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+  }
+}
+
+.mobileOnly {
+  @media screen and (min-width: $md) {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+  }
 }

@@ -43,6 +43,8 @@
     "body": [
       "import { ComponentProps } from '@utils/types'",
       "",
+      "// TODO: Create ${TM_FILENAME_BASE/(.*)/${1}/} tests and stories",
+      "",
       "interface ${TM_FILENAME_BASE/(.*)/${1}/}Props extends ComponentProps {}",
       "",
       "export const ${TM_FILENAME_BASE/(.*)/${1}/} = ({ className, testId, componentId }: ${TM_FILENAME_BASE/(.*)/${1}/}Props) => {",
