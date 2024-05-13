@@ -1,4 +1,3 @@
-import { headingFont } from '../../utils/fonts'
 import { TableProps } from '../../utils/types'
 
 export const Table = ({
@@ -14,7 +13,7 @@ export const Table = ({
       className={`table${className ? ` ${className}` : ''}`}
     >
       {headingRow && headingRow.length > 0 && (
-        <thead className={headingFont.className}>
+        <thead>
           <tr>
             {headingRow.map((cell) => (
               <th key={cell}>{cell}</th>

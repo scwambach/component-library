@@ -4,7 +4,6 @@ import ReactSelect from 'react-select'
 import { CaretDown, CheckSquare, RadioButton } from '@phosphor-icons/react'
 import { FieldProps } from '../../utils/types'
 import { Flex, Grid, Markdown, IconSelector } from '../utility'
-import { bodyFont, headingFont } from '../../utils/fonts'
 
 const Label = ({
   label,
@@ -16,7 +15,7 @@ const Label = ({
   return (
     <Flex direction="column" gap="micro">
       <span
-        className={`label ${headingFont.className}`}
+        className="label"
         dangerouslySetInnerHTML={{
           __html: label,
         }}
@@ -69,12 +68,7 @@ export const FormField = ({
         >
           <Flex direction="column" gap="xxs">
             <Label label={label} description={description} />
-            <textarea
-              {...fieldArgs}
-              rows={4}
-              onChange={onChangeArea}
-              className={bodyFont.className}
-            />
+            <textarea {...fieldArgs} rows={4} onChange={onChangeArea} />
           </Flex>
         </label>
       ) : type === 'select' ? (
@@ -85,11 +79,7 @@ export const FormField = ({
         >
           <Flex direction="column" gap="xxs">
             <Label label={label} description={description} />
-            <select
-              {...fieldArgs}
-              onChange={onChangeSelect}
-              className={bodyFont.className}
-            >
+            <select {...fieldArgs} onChange={onChangeSelect}>
               {choices?.map((choice) => (
                 <option key={choice.id} value={choice.value}>
                   {choice.copy}
@@ -122,13 +112,11 @@ export const FormField = ({
                 >
                   <Flex direction="row-reverse" alignItems="center" gap="micro">
                     <span
-                      className={bodyFont.className}
                       dangerouslySetInnerHTML={{
                         __html: choice.copy,
                       }}
                     />
                     <input
-                      className={bodyFont.className}
                       type={type}
                       onFocus={(e) => {
                         if (e.target.parentElement) {
@@ -185,7 +173,6 @@ export const FormField = ({
               }}
               options={multiChoices}
               name={fieldId}
-              className={bodyFont.className}
             />
           </Flex>
         </label>

@@ -4,7 +4,6 @@ import { EventProps } from '../../utils/types'
 import { ImageObject, GalleryModal, Button, LinkObject } from '../modules'
 import dayjs from 'dayjs'
 import { useEffect, useState } from 'react'
-import { headingFont } from '../../utils/fonts'
 import { convertTime } from '../../utils/convertTime'
 
 export const Event = ({
@@ -93,7 +92,7 @@ export const Event = ({
                     setPosterOpen(!posterOpen)
                   }}
                 >
-                  <span className={headingFont.className}>See Full Image</span>
+                  <span>See Full Image</span>
                   <ImageObject
                     isBackground
                     {...poster}

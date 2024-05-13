@@ -1,6 +1,5 @@
 import { ImageObject, SectionHeading } from '../modules'
 import { Box, Container, Flex, Markdown, Portable } from '../utility'
-import { headingFont } from '../../utils/fonts'
 import { TimelineProps } from '../../utils/types'
 import dayjs from 'dayjs'
 
@@ -38,9 +37,7 @@ export const Timeline = ({
                   <p className="date">
                     <span>{dayjs(event.date).format('MMM DD, YYYY')}</span>
                   </p>
-                  <p className={`title ${headingFont.className}`}>
-                    {event.title}
-                  </p>
+                  <p className={`title `}>{event.title}</p>
                   {event.description && (
                     <div className="description">
                       {markdown ? (
