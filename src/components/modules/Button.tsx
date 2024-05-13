@@ -1,7 +1,7 @@
-import { ButtonProps } from '@utils/types'
-import { headingFont } from '@utils/fonts'
-import { IconSelector } from '@components/utility'
-import { LinkObject } from '@components/modules'
+import { ButtonProps } from '../../utils/types'
+import { headingFont } from '../../utils/fonts'
+import { IconSelector } from '../utility'
+import { LinkObject } from '../modules'
 
 export const Button = ({
   ariaControls,

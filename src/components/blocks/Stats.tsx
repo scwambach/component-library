@@ -1,7 +1,7 @@
-import { Stat } from '@components/modules'
-import { SectionHeading } from '@components/modules/SectionHeading'
-import { Container, Grid } from '@components/utility'
-import { ColumnSize, StatsProps } from '@utils/types'
+import { Stat } from '../modules'
+import { SectionHeading } from '../modules/SectionHeading'
+import { Container, Grid } from '../utility'
+import { ColumnSize, StatsProps } from '../../utils/types'
 
 export const Stats = ({
   className,

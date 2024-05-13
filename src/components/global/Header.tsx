@@ -1,7 +1,7 @@
 'use client'
-import { Avatar, Button, Dropdown, LinkObject } from '@components/modules'
-import { Flex, Heading } from '@components/utility'
-import { ButtonTypes, GlobalProps } from '@utils/types'
+import { Avatar, Button, Dropdown, LinkObject } from '../modules'
+import { Flex, Heading } from '../utility'
+import { ButtonTypes, GlobalProps } from '../../utils/types'
 import { useState } from 'react'
 import { signIn, signOut, useSession } from 'next-auth/react'
 

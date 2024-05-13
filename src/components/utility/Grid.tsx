@@ -1,4 +1,4 @@
-import { GridProps } from '@utils/types'
+import { GridProps } from '../../utils/types'
 
 export const Grid = ({
   ariaLabel,

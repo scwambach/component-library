@@ -1,7 +1,7 @@
 'use client'
-import { Button } from '@components/modules'
-import { Box } from '@components/utility'
-import { AccordionProps } from '@utils/types'
+import { Button } from '../modules'
+import { Box } from '../utility'
+import { AccordionProps } from '../../utils/types'
 import { useEffect, useRef, useState } from 'react'
 
 export const Accordion = ({

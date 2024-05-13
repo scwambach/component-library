@@ -1,7 +1,7 @@
 'use client'
-import { Button } from '@components/modules'
+import { Button } from '../modules'
 import { X } from '@phosphor-icons/react'
-import { DrawerProps } from '@utils/types'
+import { DrawerProps } from '../../utils/types'
 import { useEffect, useState } from 'react'
 
 export const Drawer = ({

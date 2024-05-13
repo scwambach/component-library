@@ -1,8 +1,8 @@
-import { Event } from '@components/modules/Event'
-import { SectionHeading } from '@components/modules/SectionHeading'
-import { Container, Flex } from '@components/utility'
-import { Spacer } from '@components/utility'
-import { EventsProps } from '@utils/types'
+import { Event } from '../modules/Event'
+import { SectionHeading } from '../modules/SectionHeading'
+import { Container, Flex } from '../utility'
+import { Spacer } from '../utility'
+import { EventsProps } from '../../utils/types'
 import { Fragment } from 'react'
 
 export const Events = ({

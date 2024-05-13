@@ -1,4 +1,4 @@
-import { LinkObjectProps } from '@utils/types'
+import { LinkObjectProps } from '../../utils/types'
 import Link from 'next/link'
 
 export const LinkObject = ({

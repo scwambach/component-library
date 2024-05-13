@@ -1,5 +1,5 @@
-import { headingFont } from '@utils/fonts'
-import { HeadingProps } from '@utils/types'
+import { headingFont } from '../../utils/fonts'
+import { HeadingProps } from '../../utils/types'
 
 export const Heading = ({
   children,

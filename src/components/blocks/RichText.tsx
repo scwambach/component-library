@@ -1,5 +1,5 @@
-import { Container, Grid, Markdown, Portable } from '@components/utility'
-import { ColumnSize, RichTextProps } from '@utils/types'
+import { Container, Grid, Markdown, Portable } from '../utility'
+import { ColumnSize, RichTextProps } from '../../utils/types'
 
 // TODO: Create RichText tests and stories
 

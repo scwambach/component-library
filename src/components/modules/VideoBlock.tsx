@@ -1,10 +1,10 @@
 'use client'
-import { VideoBlockProps } from '@utils/types'
+import { VideoBlockProps } from '../../utils/types'
 import { useEffect, useState } from 'react'
 import ReactPlayer from 'react-player'
 import { Play } from '@phosphor-icons/react/dist/ssr'
-import { Box, Flex, Heading, Markdown, Portable } from '@components/utility'
-import { colors } from '@utils/settings'
+import { Box, Flex, Heading, Markdown, Portable } from '../utility'
+import { colors } from '../../utils/settings'
 
 export const VideoBlock = ({
   className,

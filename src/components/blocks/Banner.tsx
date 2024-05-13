@@ -1,21 +1,8 @@
-import {
-  Avatar,
-  Breadcrumbs,
-  Button,
-  ImageObject,
-  Tag,
-} from '@components/modules'
-import {
-  Box,
-  Container,
-  Flex,
-  Grid,
-  Heading,
-  Portable,
-} from '@components/utility'
-import { compileAuthorNames } from '@utils/compileAuthorNames'
-import { parseMarkdownToHTML } from '@utils/parseMarkdownToHTML'
-import { BannerProps } from '@utils/types'
+import { Avatar, Breadcrumbs, Button, ImageObject, Tag } from '../modules'
+import { Box, Container, Flex, Grid, Heading, Portable } from '../utility'
+import { compileAuthorNames } from '../../utils/compileAuthorNames'
+import { parseMarkdownToHTML } from '../../utils/parseMarkdownToHTML'
+import { BannerProps } from '../../utils/types'
 import dayjs from 'dayjs'
 
 export const Banner = ({

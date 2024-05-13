@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react'
 import { River } from './River'
-import { RiverProps } from '@utils/types'
+import { RiverProps } from '../../utils/types'
 
 describe('River Component', () => {
   const defaultProps: RiverProps = {

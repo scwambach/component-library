@@ -1,5 +1,5 @@
-import { Badge, ImageObject } from '@components/modules'
-import { AvatarProps } from '@utils/types'
+import { Badge, ImageObject } from '../modules'
+import { AvatarProps } from '../../utils/types'
 
 const getFirstLetters = (firstName: string, lastName: string) => {
   return `${firstName.charAt(0)}${lastName.charAt(0)}`

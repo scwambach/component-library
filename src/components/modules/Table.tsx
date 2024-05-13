@@ -1,5 +1,5 @@
-import { headingFont } from '@utils/fonts'
-import { TableProps } from '@utils/types'
+import { headingFont } from '../../utils/fonts'
+import { TableProps } from '../../utils/types'
 
 export const Table = ({
   className,

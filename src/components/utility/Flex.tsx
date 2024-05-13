@@ -1,4 +1,4 @@
-import { FlexProps } from '@utils/types'
+import { FlexProps } from '../../utils/types'
 
 export const Flex = ({
   alignItems = 'flex-start',

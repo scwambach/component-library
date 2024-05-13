@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from '@testing-library/react'
 import { Card } from './Card'
-import { ImageObjectProps, PersonProps } from '@utils/types'
+import { ImageObjectProps, PersonProps } from '../../utils/types'
 
 describe('Card Component', () => {
   const cardPropsWithLinks = {

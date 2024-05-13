@@ -1,6 +1,6 @@
-import { BreadcrumbsProps } from '@utils/types'
-import { LinkObject } from '@components/modules'
-import { IconSelector, Flex } from '@components/utility'
+import { BreadcrumbsProps } from '../../utils/types'
+import { LinkObject } from '../modules'
+import { IconSelector, Flex } from '../utility'
 
 export const Breadcrumbs = ({
   className,

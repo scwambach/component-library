@@ -1,8 +1,8 @@
-import { Heading, IconSelector, Flex, Box } from '@components/utility'
-import { Tag } from '@components/modules'
-import { addCommas } from '@utils/addCommas'
-import { toUsCurrency } from '@utils/toUsCurrency'
-import { StatProps } from '@utils/types'
+import { Heading, IconSelector, Flex, Box } from '../utility'
+import { Tag } from '../modules'
+import { addCommas } from '../../utils/addCommas'
+import { toUsCurrency } from '../../utils/toUsCurrency'
+import { StatProps } from '../../utils/types'
 
 export const Stat = ({
   className,

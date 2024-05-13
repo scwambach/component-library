@@ -1,6 +1,6 @@
-import { DotsProps } from '@utils/types'
-import { Button } from '@components/modules'
-import { Flex, IconSelector } from '@components/utility'
+import { DotsProps } from '../../utils/types'
+import { Button } from '../modules'
+import { Flex, IconSelector } from '../utility'
 
 export const Dots = ({
   activeIndex,

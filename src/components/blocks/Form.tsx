@@ -1,7 +1,7 @@
-import { Button } from '@components/modules'
-import { SectionHeading } from '@components/modules/SectionHeading'
-import { Container } from '@components/utility'
-import { FormProps } from '@utils/types'
+import { Button } from '../modules'
+import { SectionHeading } from '../modules/SectionHeading'
+import { Container } from '../utility'
+import { FormProps } from '../../utils/types'
 
 const Form = ({
   children,

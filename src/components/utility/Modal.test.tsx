@@ -1,6 +1,6 @@
 import { fireEvent, render } from '@testing-library/react'
 import { Modal } from './Modal'
-import { ModalProps } from '@utils/types'
+import { ModalProps } from '../../utils/types'
 
 describe('Modal Component', () => {
   const triggerCopy = 'Open Modal'

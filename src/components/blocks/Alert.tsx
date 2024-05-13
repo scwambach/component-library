@@ -1,10 +1,10 @@
 'use client'
-import { Button } from '@components/modules'
-import { IconSelector } from '@components/utility'
-import { AlertProps } from '@utils/types'
+import { Button } from '../modules'
+import { IconSelector } from '../utility'
+import { AlertProps } from '../../utils/types'
 import { useEffect, useState } from 'react'
 import * as Icon from '@phosphor-icons/react'
-import { parseMarkdownToHTML } from '@utils/parseMarkdownToHTML'
+import { parseMarkdownToHTML } from '../../utils/parseMarkdownToHTML'
 
 export const Alert = ({
   type,

@@ -1,5 +1,5 @@
-import { parseMarkdownToHTML } from '@utils/parseMarkdownToHTML'
-import { MarkdownProps } from '@utils/types'
+import { parseMarkdownToHTML } from '../../utils/parseMarkdownToHTML'
+import { MarkdownProps } from '../../utils/types'
 
 export const Markdown = ({
   children,

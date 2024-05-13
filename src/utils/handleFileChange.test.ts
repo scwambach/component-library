@@ -1,5 +1,5 @@
-import { handleFileChange } from '@utils/handleFileChange'
-import { FormDataProps, SetFormDataProps } from '@utils/types'
+import { handleFileChange } from './handleFileChange'
+import { FormDataProps, SetFormDataProps } from './types'
 
 describe('handleFileChange', () => {
   let formData: FormDataProps

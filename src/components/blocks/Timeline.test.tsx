@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react'
 import { Timeline } from './Timeline'
-import { TimelineProps } from '@utils/types'
+import { TimelineProps } from '../../utils/types'
 
 const subheading = [
   {

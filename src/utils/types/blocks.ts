@@ -1,6 +1,6 @@
 import { CSSProperties, FormEvent, ReactNode } from 'react'
 import { BlockProps, ComponentProps } from './global'
-import * as Form from '@forms/index'
+import * as Form from '../../forms'
 import {
   BreadcrumbsProps,
   ButtonProps,

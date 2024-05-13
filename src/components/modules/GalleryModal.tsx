@@ -1,8 +1,8 @@
 'use client'
-import { Button, ImageObject } from '@components/modules'
+import { Button, ImageObject } from '../modules'
 import { CaretLeft, CaretRight, X } from '@phosphor-icons/react'
-import { colors } from '@utils/settings'
-import { ComponentProps, ImageObjectProps } from '@utils/types'
+import { colors } from '../../utils/settings'
+import { ComponentProps, ImageObjectProps } from '../../utils/types'
 
 interface GalleryModalProps extends ComponentProps {
   isModalOpen?: boolean

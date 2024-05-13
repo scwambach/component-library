@@ -1,6 +1,6 @@
-import { ImageObject } from '@components/modules'
-import { Flex } from '@components/utility'
-import { LogoRowProps } from '@utils/types'
+import { ImageObject } from '../modules'
+import { Flex } from '../utility'
+import { LogoRowProps } from '../../utils/types'
 
 // TODO: Create LogoRow tests and stories
 

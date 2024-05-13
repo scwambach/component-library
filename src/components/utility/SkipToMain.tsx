@@ -1,6 +1,6 @@
 'use client'
 
-import { Button } from '@components/modules'
+import { Button } from '../modules'
 
 export const SkipToMain = () => {
   return (

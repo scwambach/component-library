@@ -1,5 +1,5 @@
-import { bodyFont } from '@utils/fonts'
-import { TooltipProps } from '@utils/types'
+import { bodyFont } from '../../utils/fonts'
+import { TooltipProps } from '../../utils/types'
 import { Box } from './Box'
 
 export const Tooltip = ({

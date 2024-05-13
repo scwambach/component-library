@@ -1,5 +1,5 @@
-import { handleInputChange } from '@utils/handleInputChange'
-import { FormDataProps, SetFormDataProps } from '@utils/types'
+import { handleInputChange } from './handleInputChange'
+import { FormDataProps, SetFormDataProps } from './types'
 
 describe('handleInputChange', () => {
   let formData: FormDataProps

@@ -1,6 +1,6 @@
-import { Button, SectionHeading } from '@components/modules'
-import { Container, Flex } from '@components/utility'
-import { ButtonRowProps } from '@utils/types'
+import { Button, SectionHeading } from '../modules'
+import { Container, Flex } from '../utility'
+import { ButtonRowProps } from '../../utils/types'
 
 // TODO: Create ButtonRow tests and stories
 

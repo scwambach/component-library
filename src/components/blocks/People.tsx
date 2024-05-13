@@ -1,7 +1,7 @@
-import { Person } from '@components/modules'
-import { SectionHeading } from '@components/modules/SectionHeading'
-import { Container, Grid } from '@components/utility'
-import { PeopleProps } from '@utils/types'
+import { Person } from '../modules'
+import { SectionHeading } from '../modules/SectionHeading'
+import { Container, Grid } from '../utility'
+import { PeopleProps } from '../../utils/types'
 
 export const People = ({
   className,

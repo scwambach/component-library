@@ -1,5 +1,5 @@
-import { Markdown, Heading, Portable } from '@components/utility'
-import { SectionHeadingProps } from '@utils/types'
+import { Markdown, Heading, Portable } from '../utility'
+import { SectionHeadingProps } from '../../utils/types'
 
 export const SectionHeading = ({
   className,

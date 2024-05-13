@@ -1,22 +1,9 @@
 'use client'
-import { CardProps } from '@utils/types'
-import {
-  Button,
-  ImageObject,
-  Avatar,
-  Tag,
-  LinkObject,
-} from '@components/modules'
-import {
-  Heading,
-  Markdown,
-  Flex,
-  Box,
-  IconSelector,
-  Spacer,
-} from '@components/utility'
+import { CardProps } from '../../utils/types'
+import { Button, ImageObject, Avatar, Tag, LinkObject } from '../modules'
+import { Heading, Markdown, Flex, Box, IconSelector, Spacer } from '../utility'
 import dayjs from 'dayjs'
-import { compileAuthorNames } from '@utils/compileAuthorNames'
+import { compileAuthorNames } from '../../utils/compileAuthorNames'
 
 export const Card = ({
   authors,

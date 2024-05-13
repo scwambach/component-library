@@ -1,4 +1,4 @@
-import { SpacerProps } from '@utils/types'
+import { SpacerProps } from '../../utils/types'
 
 export const Spacer = ({
   className,

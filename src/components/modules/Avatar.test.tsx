@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react'
 import { Avatar } from './Avatar'
-import { Colors } from '@utils/types'
+import { Colors } from '../../utils/types'
 
 describe('Avatar', () => {
   it('renders with required props', () => {

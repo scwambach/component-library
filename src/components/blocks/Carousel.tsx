@@ -1,8 +1,8 @@
 'use client'
-import { CarouselProps } from '@utils/types'
+import { CarouselProps } from '../../utils/types'
 import { Banner } from './Banner'
-import { Dots } from '@components/modules/Dots'
-import { Flex } from '@components/utility'
+import { Dots } from '../modules/Dots'
+import { Flex } from '../utility'
 import { useEffect, useState } from 'react'
 
 // TODO: Create tests

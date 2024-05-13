@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import { Person } from './Person'
 import * as Icon from '@phosphor-icons/react'
-import { PersonProps } from '@utils/types'
+import { PersonProps } from '../../utils/types'
 
 describe('Person Component', () => {
   const imageObjectProps = {

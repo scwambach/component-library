@@ -1,7 +1,7 @@
-import { ImageObject, SectionHeading } from '@components/modules'
-import { Box, Container, Flex, Markdown, Portable } from '@components/utility'
-import { headingFont } from '@utils/fonts'
-import { TimelineProps } from '@utils/types'
+import { ImageObject, SectionHeading } from '../modules'
+import { Box, Container, Flex, Markdown, Portable } from '../utility'
+import { headingFont } from '../../utils/fonts'
+import { TimelineProps } from '../../utils/types'
 import dayjs from 'dayjs'
 
 export const Timeline = ({

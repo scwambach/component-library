@@ -1,8 +1,8 @@
 'use client'
-import { HeadingItem, TableOfContentsProps } from '@utils/types'
+import { HeadingItem, TableOfContentsProps } from '../../utils/types'
 import { useEffect, useState } from 'react'
 import { LinkObject } from './LinkObject'
-import { Flex, Heading, Spinner } from '@components/utility'
+import { Flex, Heading, Spinner } from '../utility'
 
 // TODO: Create TableOfContents tests and stories
 

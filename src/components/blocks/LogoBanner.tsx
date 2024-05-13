@@ -1,6 +1,6 @@
-import { ImageObject } from '@components/modules'
-import { Flex } from '@components/utility'
-import { LogoBannerProps } from '@utils/types'
+import { ImageObject } from '../modules'
+import { Flex } from '../utility'
+import { LogoBannerProps } from '../../utils/types'
 
 // TODO: Create LogoBanner tests and stories
 

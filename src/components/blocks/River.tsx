@@ -1,13 +1,6 @@
-import { Button, ImageObject, VideoBlock } from '@components/modules'
-import {
-  Box,
-  Container,
-  Flex,
-  Heading,
-  Markdown,
-  Portable,
-} from '@components/utility'
-import { RiverProps } from '@utils/types'
+import { Button, ImageObject, VideoBlock } from '../modules'
+import { Box, Container, Flex, Heading, Markdown, Portable } from '../utility'
+import { RiverProps } from '../../utils/types'
 
 export const River = ({
   className,

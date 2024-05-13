@@ -1,8 +1,5 @@
-import {
-  checkboxArray,
-  handleCheckBoxChange,
-} from '@utils/handleCheckBoxChange'
-import { FormDataProps, SetFormDataProps } from '@utils/types'
+import { checkboxArray, handleCheckBoxChange } from './handleCheckBoxChange'
+import { FormDataProps, SetFormDataProps } from './types'
 
 describe('handleCheckBoxChange', () => {
   let formData: FormDataProps

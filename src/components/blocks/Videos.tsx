@@ -1,7 +1,7 @@
-import { Button, SectionHeading } from '@components/modules'
-import { VideoBlock } from '@components/modules/VideoBlock'
-import { Container, Flex, Grid, Spacer } from '@components/utility'
-import { VideosProps } from '@utils/types'
+import { Button, SectionHeading } from '../modules'
+import { VideoBlock } from '../modules/VideoBlock'
+import { Container, Flex, Grid, Spacer } from '../utility'
+import { VideosProps } from '../../utils/types'
 
 export const Videos = ({
   button,

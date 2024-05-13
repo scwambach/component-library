@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react'
 import { Table } from './Table'
-import { TableProps } from '@utils/types'
+import { TableProps } from '../../utils/types'
 
 describe('Table Component', () => {
   const className = 'custom-table'

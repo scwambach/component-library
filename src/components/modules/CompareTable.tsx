@@ -1,5 +1,5 @@
-import { Box, Flex, Heading } from '@components/utility'
-import { CompareTableProps } from '@utils/types'
+import { Box, Flex, Heading } from '../utility'
+import { CompareTableProps } from '../../utils/types'
 import { Button } from './Button'
 import { Check } from '@phosphor-icons/react/dist/ssr'
 import { Tag } from './Tag'

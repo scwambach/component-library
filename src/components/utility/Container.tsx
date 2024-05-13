@@ -1,4 +1,4 @@
-import { ContainerProps } from '@utils/types'
+import { ContainerProps } from '../../utils/types'
 
 export const Container = ({
   children,

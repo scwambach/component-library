@@ -1,17 +1,10 @@
 'use client'
-import { Button } from '@components/modules'
-import { Card } from '@components/modules/Card'
-import { SectionHeading } from '@components/modules/SectionHeading'
-import {
-  Container,
-  Flex,
-  Grid,
-  Heading,
-  Spacer,
-  Spinner,
-} from '@components/utility'
+import { Button } from '../modules'
+import { Card } from '../modules/Card'
+import { SectionHeading } from '../modules/SectionHeading'
+import { Container, Flex, Grid, Heading, Spacer, Spinner } from '../utility'
 import { CaretLeft, CaretRight } from '@phosphor-icons/react'
-import { CardsProps } from '@utils/types'
+import { CardsProps } from '../../utils/types'
 import { useEffect, useState } from 'react'
 import ReactPaginate from 'react-paginate'
 

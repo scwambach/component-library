@@ -1,4 +1,4 @@
-import '@styles/main.scss'
+import '../styles/main.scss'
 
 export default async function RootLayout({
   children,
@@ -7,8 +7,7 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}
-      </body>
+      <body>{children}</body>
     </html>
   )
 }

@@ -1,6 +1,6 @@
-import { ShareButtonsProps } from '@utils/types'
+import { ShareButtonsProps } from '../../utils/types'
 import { Button } from './Button'
-import { Flex } from '@components/utility'
+import { Flex } from '../utility'
 import {
   FacebookLogo,
   LinkedinLogo,

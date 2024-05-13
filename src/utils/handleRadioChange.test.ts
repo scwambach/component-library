@@ -1,5 +1,5 @@
-import { handleRadioChange } from '@utils/handleRadioChange'
-import { FormDataProps, SetFormDataProps } from '@utils/types'
+import { handleRadioChange } from './handleRadioChange'
+import { FormDataProps, SetFormDataProps } from './types'
 
 describe('handleRadioChange', () => {
   let formData: FormDataProps

@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react'
 import { Tag } from './Tag'
-import { TagProps } from '@utils/types'
+import { TagProps } from '../../utils/types'
 
 describe('Tag Component', () => {
   const className = 'custom-tag'

@@ -1,8 +1,8 @@
 'use client'
-import { Button, ImageObject, GalleryModal } from '@components/modules'
-import { SectionHeading } from '@components/modules/SectionHeading'
-import { Container, Grid } from '@components/utility'
-import { GalleryProps } from '@utils/types'
+import { Button, ImageObject, GalleryModal } from '../modules'
+import { SectionHeading } from '../modules/SectionHeading'
+import { Container, Grid } from '../utility'
+import { GalleryProps } from '../../utils/types'
 import { useEffect, useState } from 'react'
 
 export const Gallery = ({

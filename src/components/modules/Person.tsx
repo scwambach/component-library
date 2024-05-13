@@ -1,8 +1,8 @@
-import { PersonProps } from '@utils/types'
+import { PersonProps } from '../../utils/types'
 import * as Icon from '@phosphor-icons/react'
-import { IconSelector, Flex, Box } from '@components/utility'
-import { LinkObject, ImageObject } from '@components/modules'
-import { headingFont } from '@utils/fonts'
+import { IconSelector, Flex, Box } from '../utility'
+import { LinkObject, ImageObject } from '../modules'
+import { headingFont } from '../../utils/fonts'
 
 export const Person = ({
   className,

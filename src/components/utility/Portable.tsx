@@ -1,8 +1,8 @@
-import { ImageObject } from '@components/modules'
-import { PortableProps } from '@utils/types/utility'
+import { ImageObject } from '../modules'
+import { PortableProps } from '../../utils/types/utility'
 import { PortableText } from 'next-sanity'
 import { Heading } from './Heading'
-import { slugify } from '@utils/slugify'
+import { slugify } from '../../utils/slugify'
 
 export const Portable = ({
   content,

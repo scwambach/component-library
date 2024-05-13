@@ -1,8 +1,8 @@
 'use client'
 import { useEffect, useRef, useState } from 'react'
-import { Button, LinkObject } from '@components/modules'
-import { Flex } from '@components/utility'
-import { DropdownProps } from '@utils/types'
+import { Button, LinkObject } from '../modules'
+import { Flex } from '../utility'
+import { DropdownProps } from '../../utils/types'
 
 export const Dropdown = ({ items, ...props }: DropdownProps) => {
   const [open, setOpen] = useState(false)

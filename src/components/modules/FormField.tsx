@@ -1,10 +1,10 @@
 'use client'
-import { slugify } from '@utils/slugify'
+import { slugify } from '../../utils/slugify'
 import ReactSelect from 'react-select'
 import { CaretDown, CheckSquare, RadioButton } from '@phosphor-icons/react'
-import { FieldProps } from '@utils/types'
-import { Flex, Grid, Markdown, IconSelector } from '@components/utility'
-import { bodyFont, headingFont } from '@utils/fonts'
+import { FieldProps } from '../../utils/types'
+import { Flex, Grid, Markdown, IconSelector } from '../utility'
+import { bodyFont, headingFont } from '../../utils/fonts'
 
 const Label = ({
   label,

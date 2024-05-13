@@ -1,6 +1,6 @@
-import { addCommas } from '@utils/addCommas'
-import { maxPlus } from '@utils/maxPlus'
-import { BadgeProps } from '@utils/types'
+import { addCommas } from '../../utils/addCommas'
+import { maxPlus } from '../../utils/maxPlus'
+import { BadgeProps } from '../../utils/types'
 
 export const Badge = ({
   className,

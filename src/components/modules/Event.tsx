@@ -1,16 +1,11 @@
 'use client'
-import { Box, Flex, Heading } from '@components/utility'
-import { EventProps } from '@utils/types'
-import {
-  ImageObject,
-  GalleryModal,
-  Button,
-  LinkObject,
-} from '@components/modules'
+import { Box, Flex, Heading } from '../utility'
+import { EventProps } from '../../utils/types'
+import { ImageObject, GalleryModal, Button, LinkObject } from '../modules'
 import dayjs from 'dayjs'
 import { useEffect, useState } from 'react'
-import { headingFont } from '@utils/fonts'
-import { convertTime } from '@utils/convertTime'
+import { headingFont } from '../../utils/fonts'
+import { convertTime } from '../../utils/convertTime'
 
 export const Event = ({
   className,

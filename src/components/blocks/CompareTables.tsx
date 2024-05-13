@@ -1,6 +1,6 @@
-import { CompareTable, SectionHeading } from '@components/modules'
-import { Container, Flex } from '@components/utility'
-import { CompareTablesProps } from '@utils/types'
+import { CompareTable, SectionHeading } from '../modules'
+import { Container, Flex } from '../utility'
+import { CompareTablesProps } from '../../utils/types'
 
 // TODO: Create CompareTables tests and stories
 

@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react'
 import { Stat } from './Stat'
-import { StatProps } from '@utils/types'
+import { StatProps } from '../../utils/types'
 import * as Icon from '@phosphor-icons/react'
 
 describe('Stat Component', () => {

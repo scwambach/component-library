@@ -1,5 +1,5 @@
-import * as Block from '@components/blocks'
-import * as Module from '@components/modules'
+import * as Block from '../blocks'
+import * as Module from '../modules'
 
 export const BlockFactory = (props: any) => {
   return (

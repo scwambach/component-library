@@ -1,7 +1,7 @@
 'use client'
-import { LinkObject, SectionHeading } from '@components/modules'
-import { Container, Flex, Heading } from '@components/utility'
-import { ContactBlockProps } from '@utils/types'
+import { LinkObject, SectionHeading } from '../modules'
+import { Container, Flex, Heading } from '../utility'
+import { ContactBlockProps } from '../../utils/types'
 import { Map } from './Map'
 
 // TODO: Create ContactBlock tests and stories
