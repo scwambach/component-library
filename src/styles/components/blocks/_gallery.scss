@@ -30,8 +30,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba($blue, 0.8);
-  transition: $transition;
+  background: var(--overlay-primary);
+  transition: var(--transition);
 
   .activeImage {
     position: absolute;
@@ -39,7 +39,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 90%;
-    transition: $transition;
+    transition: var(--transition);
     max-height: 90%;
     height: 100%;
     overflow: hidden;
@@ -71,9 +71,9 @@
     transform: translateY(-50%);
     width: $size-24;
     height: $size-24;
-    background: $white;
+    background: var(--color-white);
     border-radius: 50%;
-    transition: $transition;
+    transition: var(--transition);
     cursor: pointer;
     z-index: 99;
 

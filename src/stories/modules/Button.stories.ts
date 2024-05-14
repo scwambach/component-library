@@ -31,6 +31,13 @@ export const Tertiary: Story = {
   },
 }
 
+export const Quaternary: Story = {
+  args: {
+    label: 'Quaternary Button',
+    theme: 'quaternary',
+  },
+}
+
 export const Unstyled: Story = {
   args: {
     label: 'Unstyled Button',

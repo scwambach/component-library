@@ -15,12 +15,12 @@ export const Carousel: Story = {
     items: [
       {
         heading: 'Card 1',
-        bgColor: 'blue',
+        bgColor: 'primary',
         message: 'This is a card',
       },
       {
         heading: 'Card 2',
-        bgColor: 'green',
+        bgColor: 'secondary',
         message: 'This is a card',
         links: [
           {
@@ -35,7 +35,7 @@ export const Carousel: Story = {
       },
       {
         heading: 'Card 3',
-        bgColor: 'red',
+        bgColor: 'quaternary',
         message: 'This is a card',
       },
       {

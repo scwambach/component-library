@@ -8,7 +8,13 @@ export type BreakNames =
   | 'xl'
   | 'xxl'
 
-export type Colors = 'red' | 'blue' | 'green' | 'orange' | 'black' | 'white'
+export type Colors =
+  | 'primary'
+  | 'secondary'
+  | 'tertiary'
+  | 'quaternary'
+  | 'black'
+  | 'white'
 
 export type AlertTypes = 'success' | 'warning' | 'error' | 'info'
 
@@ -58,7 +64,7 @@ export type ContainerClasses =
   | 'narrower'
   | 'full'
 
-export type Themes = 'primary' | 'secondary' | 'tertiary'
+export type Themes = 'primary' | 'secondary' | 'tertiary' | 'quaternary'
 
 export type Elements =
   | 'div'

@@ -1,13 +1,13 @@
 {
   "name": "@wambach-dev/react-library",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": false,
   "repository": {
     "type": "git",
     "url": "git://github.com/scwambach/component-library"
   },
   "author": "Scott Wambach",
-  "description": "React component library for building websites.",
+  "description": "React component library for building websites with Sanity and Next.js",
   "license": "MIT",
   "main": "src/components/index.ts",
   "scripts": {

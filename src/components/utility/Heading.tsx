@@ -1,4 +1,3 @@
-import { headingFont } from '../../utils/fonts'
 import { HeadingProps } from '../../utils/types'
 
 export const Heading = ({
@@ -16,9 +15,7 @@ export const Heading = ({
     <HeadingTag
       id={componentId}
       data-testid={testId}
-      className={`heading ${
-        headingFont.className
-      }${className ? ` ${className}` : ''}`}
+      className={`heading${className ? ` ${className}` : ''}`}
     >
       {children}
     </HeadingTag>

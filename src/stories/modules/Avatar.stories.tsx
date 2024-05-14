@@ -46,7 +46,7 @@ export const WithBadgeColor: Story = {
     lastName: 'Doe',
     badge: {
       number: 5,
-      color: 'blue',
+      color: 'primary',
     },
   },
 }

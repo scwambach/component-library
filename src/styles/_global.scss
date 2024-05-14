@@ -1,22 +1,22 @@
 html {
-  background-color: $black;
+  background-color: var(--color-black);
 
   main {
-    background-color: $eggShell;
+    background-color: var(--color-offwhite);
   }
 }
 
 * {
   &:focus {
-    outline-offset: $size-2;
-    outline: $size-4 solid $red;
+    outline-offset: var(--focus-offset);
+    outline: $size-4 solid var(--color-focus-outline);
   }
 }
 
 ::selection {
-  background: $orange;
-  color: $white;
-  text-shadow: -1px 1px 3px $black;
+  background: var(--color-tertiary);
+  color: var(--color-white);
+  text-shadow: -1px 1px 3px var(--color-black);
 }
 
 #bodyContent {
@@ -38,35 +38,35 @@ html {
 
 .container {
   width: 100%;
-  max-width: $xxl;
-  padding: 0 $size-32;
+  max-width: var(--break-xxl);
+  padding: 0 var(--container-padding);
   margin: 0 auto;
   position: relative;
 
   &.padded {
-    padding-top: $vertical-spacing;
-    padding-bottom: $vertical-spacing;
+    padding-top: var(--vertical-spacing);
+    padding-bottom: var(--vertical-spacing);
 
     @media screen and (max-width: ($md - 1)) {
-      padding-top: $vertical-spacing-mobile;
-      padding-bottom: $vertical-spacing-mobile;
+      padding-top: var(--vertical-spacing-mobile);
+      padding-bottom: var(--vertical-spacing-mobile);
     }
   }
 
   &.wide {
-    max-width: $xl + $sm;
+    max-width: var(--container-wide);
   }
 
   &.wider {
-    max-width: $xl + $md;
+    max-width: var(--container-wider);
   }
 
   &.narrow {
-    max-width: $xl;
+    max-width: var(--container-narrow);
   }
 
   &.narrower {
-    max-width: $md;
+    max-width: var(--container-narrower);
   }
 
   &.full {
@@ -79,39 +79,39 @@ html {
 }
 
 .gap-micro {
-  gap: $size-4;
+  gap: var(--gap-micro);
 }
 
 .gap-xxs {
-  gap: $size-16;
+  gap: var(--gap-xxs);
 }
 
 .gap-xs {
-  gap: $size-20;
+  gap: var(--gap-xs);
 }
 
 .gap-sm {
-  gap: $size-32;
+  gap: var(--gap-sm);
 }
 
 .gap-md {
-  gap: $size-40;
+  gap: var(--gap-md);
 }
 
 .gap-lg {
-  gap: $size-52;
+  gap: var(--gap-lg);
 }
 
 .gap-xl {
-  gap: $size-72;
+  gap: var(--gap-xl);
 }
 
 .gap-xxl {
-  gap: $size-84;
+  gap: var(--gap-xxl);
 }
 
 .gap-mega {
-  gap: $size-120;
+  gap: var(--gap-mega);
 }
 
 .srOnly {

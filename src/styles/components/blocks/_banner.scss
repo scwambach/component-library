@@ -7,7 +7,7 @@
   justify-content: center;
 
   @media screen and (min-width: ($lg)) {
-    min-height: $xs;
+    min-height: var(--break-xs);
   }
 
   &.contained {
@@ -46,29 +46,29 @@
         z-index: 2;
       }
 
-      &.red {
-        background-color: $lightRed;
+      &.quaternary {
+        background-color: var(--color-quaternary-light);
       }
 
-      &.blue {
-        background-color: $lightBlue;
+      &.primary {
+        background-color: var(--color-primary-light);
       }
 
-      &.green {
-        background-color: $lightGreen;
+      &.secondary {
+        background-color: var(--color-secondary-light);
       }
 
-      &.orange {
-        background-color: $lightOrange;
+      &.tertiary {
+        background-color: var(--color-tertiary-light);
       }
 
       &.black {
-        background-color: $black;
-        color: $eggShell;
+        background-color: var(--color-black);
+        color: var(--color-offwhite);
       }
 
       &.white {
-        background-color: $eggShell;
+        background-color: var(--color-offwhite);
       }
     }
 
@@ -79,33 +79,33 @@
     }
   }
 
-  &.red {
-    background-color: $lightRed;
+  &.primary {
+    background-color: var(--color-primary-light);
   }
 
-  &.blue {
-    background-color: $lightBlue;
+  &.secondary {
+    background-color: var(--color-secondary-light);
   }
 
-  &.green {
-    background-color: $lightGreen;
+  &.tertiary {
+    background-color: var(--color-tertiary-light);
   }
 
-  &.orange {
-    background-color: $lightOrange;
+  &.quaternary {
+    background-color: var(--color-quaternary-light);
   }
 
   &.black {
-    background-color: $black;
-    color: $eggShell;
+    background-color: var(--color-black);
+    color: var(--color-offwhite);
   }
 
   &.white {
-    background-color: $eggShell;
+    background-color: var(--color-offwhite);
   }
 
   &.has-image {
-    color: $white;
+    color: var(--color-white);
 
     &:before {
       content: '';
@@ -119,12 +119,12 @@
     }
 
     .links {
-      color: $white;
+      color: var(--color-white);
     }
 
     .breadcrumbs {
       a {
-        color: $white;
+        color: var(--color-white);
       }
     }
   }
@@ -134,7 +134,7 @@
   }
 
   .innerContent {
-    max-width: $md;
+    max-width: var(--break-md);
   }
 
   .date {

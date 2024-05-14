@@ -10,10 +10,10 @@ const meta: Meta<typeof QuoteItem> = {
 export default meta
 type Story = StoryObj<typeof QuoteItem>
 
-export const Blue: Story = {
+export const Primary: Story = {
   args: {
     markdown: true,
-    bgColor: 'blue',
+    bgColor: 'primary',
     cite: 'John Doe',
     quote:
       'Aenean faucibus elit eget metus faucibus accumsan. Vestibulum non consequat est. Aenean malesuada sagittis nec ac nulla.',
@@ -21,10 +21,10 @@ export const Blue: Story = {
   },
 }
 
-export const Green: Story = {
+export const Secondary: Story = {
   args: {
     markdown: true,
-    bgColor: 'green',
+    bgColor: 'secondary',
     cite: 'John Doe',
     quote:
       'Aenean faucibus elit eget metus faucibus accumsan. Vestibulum non consequat est. Aenean malesuada sagittis nec ac nulla.',
@@ -32,20 +32,20 @@ export const Green: Story = {
   },
 }
 
-export const Red: Story = {
+export const Quaternary: Story = {
   args: {
     markdown: true,
-    bgColor: 'red',
+    bgColor: 'quaternary',
     quote:
       'Aenean faucibus elit eget metus faucibus accumsan. Vestibulum non consequat est. Aenean malesuada sagittis nec ac nulla.',
     testId: 'quote-test',
   },
 }
 
-export const Orange: Story = {
+export const Tertiary: Story = {
   args: {
     markdown: true,
-    bgColor: 'orange',
+    bgColor: 'tertiary',
     cite: 'John Doe',
     quote:
       'Aenean faucibus elit eget metus faucibus accumsan. Vestibulum non consequat est. Aenean malesuada sagittis nec ac nulla.',
@@ -56,7 +56,7 @@ export const Orange: Story = {
 export const PersonQuote: Story = {
   args: {
     markdown: true,
-    bgColor: 'green',
+    bgColor: 'secondary',
     cite: 'John Doe',
     person: {
       firstName: 'John',

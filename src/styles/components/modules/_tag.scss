@@ -6,29 +6,29 @@
   font-weight: 800;
 
   &.primary {
-    color: darken($blue, 0%);
-    background-color: $lightBlue;
+    color: var(--color-primary);
+    background-color: var(--color-primary-light);
 
     a {
-      color: darken($blue, 0%);
+      color: var(--color-primary);
     }
   }
 
   &.secondary {
-    color: darken($green, 10%);
-    background-color: $lightGreen;
+    color: var(--color-secondary-dark);
+    background-color: var(--color-secondary-light);
 
     a {
-      color: darken($green, 10%);
+      color: var(--color-secondary-dark);
     }
   }
 
   &.tertiary {
-    color: darken($orange, 35%);
-    background-color: $lightOrange;
+    color: var(--color-tertiary-dark);
+    background-color: var(--color-tertiary);
 
     a {
-      color: darken($orange, 35%);
+      color: var(--color-tertiary-dark);
     }
   }
 }

@@ -19,7 +19,7 @@ export const Default: Story = {
 export const WithColor: Story = {
   args: {
     number: 5,
-    color: 'blue',
+    color: 'primary',
   },
 }
 
