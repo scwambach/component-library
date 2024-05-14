@@ -8,7 +8,7 @@ import dayjs from 'dayjs'
 export const Banner = ({
   authors,
   backgroundImage,
-  bgColor = 'blue',
+  bgColor = 'primary',
   boxBgColor = 'white',
   className,
   componentId,

@@ -59,4 +59,13 @@
       color: var(--color-black);
     }
   }
+
+  &.quaternary {
+    background-color: var(--color-quaternary);
+
+    &:hover {
+      background-color: var(--color-quaternary-light);
+      color: var(--color-black);
+    }
+  }
 }

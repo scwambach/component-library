@@ -46,19 +46,19 @@
         z-index: 2;
       }
 
-      &.red {
+      &.quaternary {
         background-color: var(--color-quaternary-light);
       }
 
-      &.blue {
+      &.primary {
         background-color: var(--color-primary-light);
       }
 
-      &.green {
+      &.secondary {
         background-color: var(--color-secondary-light);
       }
 
-      &.orange {
+      &.tertiary {
         background-color: var(--color-tertiary-light);
       }
 
@@ -79,20 +79,20 @@
     }
   }
 
-  &.red {
-    background-color: var(--color-quaternary-light);
-  }
-
-  &.blue {
+  &.primary {
     background-color: var(--color-primary-light);
   }
 
-  &.green {
+  &.secondary {
     background-color: var(--color-secondary-light);
   }
 
-  &.orange {
+  &.tertiary {
     background-color: var(--color-tertiary-light);
+  }
+
+  &.quaternary {
+    background-color: var(--color-quaternary-light);
   }
 
   &.black {
