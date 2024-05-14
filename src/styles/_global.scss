@@ -8,8 +8,8 @@ html {
 
 * {
   &:focus {
-    outline-offset: $size-2;
-    outline: $size-4 solid $red;
+    outline-offset: var(--focus-offset);
+    outline: $size-4 solid var(--color-focus-outline);
   }
 }
 
@@ -39,7 +39,7 @@ html {
 .container {
   width: 100%;
   max-width: var(--break-xxl);
-  padding: 0 $size-32;
+  padding: 0 var(--container-padding);
   margin: 0 auto;
   position: relative;
 

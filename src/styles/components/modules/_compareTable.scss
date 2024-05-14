@@ -14,29 +14,29 @@
   }
 
   &.highlight {
-    color: $eggShell;
+    color: var(--color-offwhite);
   }
 
   &.primary {
-    background-color: $lightBlue;
+    background-color: var(--color-primary-light);
 
     &.highlight {
-      background: $blue;
-      color: $eggShell;
+      background: var(--color-primary);
+      color: var(--color-offwhite);
     }
   }
   &.secondary {
-    background-color: $lightGreen;
+    background-color: var(--color-secondary-light);
 
     &.highlight {
-      background: $green;
+      background: var(--color-secondary);
     }
   }
   &.tertiary {
-    background-color: $lightOrange;
+    background-color: var(--color-tertiary-light);
 
     &.highlight {
-      background: $orange;
+      background: var(--color-tertiary);
     }
   }
 }

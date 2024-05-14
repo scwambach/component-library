@@ -1,6 +1,6 @@
 .post {
   .tableOfContents {
-    width: $xxs;
+    width: var(--break-xxs);
 
     @media screen and (min-width: ($lg)) {
       position: sticky;

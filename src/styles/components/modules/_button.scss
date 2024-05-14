@@ -2,33 +2,33 @@
   @include radius4;
   align-items: center;
   appearance: none;
-  background: $blue;
+  background: var(--color-primary);
   border: none;
-  color: $white;
+  color: var(--color-white);
   cursor: pointer;
   display: inline-flex;
   font-size: $size-16;
   gap: $size-5;
   letter-spacing: $size-1 / 2;
-  line-height: $line-height-single;
-  outline-offset: $size-2;
+  line-height: var(--line-height-single);
+  outline-offset: var(--focus-offset);
   padding: $size-8 $size-16;
   text-align: center;
   transition-property: background-color, color, box-shadow;
-  transition: $transition;
+  transition: var(--transition);
 
   &:focus {
     @media screen and (min-width: ($sm)) {
-      outline: $size-4 solid $red;
+      outline: $size-4 solid var(--color-focus-outline);
     }
   }
 
   &:hover {
     @media screen and (min-width: ($sm)) {
       text-decoration: none;
-      background-color: $lightBlue;
+      background-color: var(--color-primary-light);
       opacity: 1;
-      color: $black;
+      color: var(--color-black);
       box-shadow: $box-shadow-1;
     }
   }
@@ -43,20 +43,20 @@
   }
 
   &.secondary {
-    background-color: $green;
+    background-color: var(--color-secondary);
 
     &:hover {
-      background-color: $lightGreen;
-      color: $black;
+      background-color: var(--color-secondary-light);
+      color: var(--color-black);
     }
   }
 
   &.tertiary {
-    background-color: $orange;
+    background-color: var(--color-tertiary);
 
     &:hover {
-      background-color: $lightOrange;
-      color: $black;
+      background-color: var(--color-tertiary-light);
+      color: var(--color-black);
     }
   }
 }

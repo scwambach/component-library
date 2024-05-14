@@ -1,9 +1,9 @@
 .event {
   padding: $size-16 $size-8;
-  transition: $transition;
+  transition: var(--transition);
 
   &:hover {
-    background-color: $white;
+    background-color: var(--color-white);
     box-shadow: $box-shadow-2;
   }
 
@@ -39,8 +39,8 @@
 
       span {
         position: absolute;
-        background-color: $blue;
-        color: $white;
+        background-color: var(--color-primary);
+        color: var(--color-white);
         height: 100%;
         width: 100%;
         z-index: 1;
@@ -49,7 +49,7 @@
         align-items: center;
         justify-content: center;
         padding: $size-8;
-        transition: $transition;
+        transition: var(--transition);
         opacity: 0;
       }
 
@@ -66,11 +66,11 @@
   .date {
     text-transform: uppercase;
     text-align: center;
-    background-color: $orange;
-    color: $white;
+    background-color: var(--color-tertiary);
+    color: var(--color-white);
     width: 60px;
     padding: $size-6 $size-4 $size-4 $size-4;
-    line-height: $line-height-single;
+    line-height: var(--line-height-single);
 
     > span {
       font-weight: bold;
@@ -94,6 +94,6 @@
 
   .times {
     margin-top: $size-8;
-    line-height: $line-height-single;
+    line-height: var(--line-height-single);
   }
 }

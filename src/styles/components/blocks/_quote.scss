@@ -6,19 +6,19 @@
   }
 
   &.red {
-    background-color: $lightRed;
+    background-color: var(--color-quaternary-light);
   }
 
   &.blue {
-    background-color: $lightBlue;
+    background-color: var(--color-primary-light);
   }
 
   &.green {
-    background-color: $lightGreen;
+    background-color: var(--color-secondary-light);
   }
 
   &.orange {
-    background-color: $lightOrange;
+    background-color: var(--color-tertiary-light);
   }
 
   blockquote {
@@ -36,7 +36,7 @@
   cite {
     display: flex;
     gap: $size-8;
-    line-height: $line-height-single;
+    line-height: var(--line-height-single);
     justify-content: center;
     margin-top: $size-32;
 

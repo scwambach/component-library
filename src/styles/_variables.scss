@@ -24,6 +24,8 @@
   --gap-xxl: #{$size-84};
   --gap-mega: #{$size-120};
 
+  --container-padding: #{$size-32};
+
   --vp-sm: #{$vp_sm};
   --vp-md: #{$vp_md};
   --vp-lg: #{$vp_lg};
@@ -34,17 +36,23 @@
 
   --color-primary: #{$blue};
   --color-primary-light: #{$lightBlue};
+  --color-primary-dark: #{darken($blue, 10%)};
   --color-secondary: #{$green};
   --color-secondary-light: #{$lightGreen};
+  --color-secondary-dark: #{darken($green, 10%)};
   --color-tertiary: #{$orange};
   --color-tertiary-light: #{$lightOrange};
+  --color-tertiary-dark: #{darken($orange, 35%)};
   --color-quaternary: #{$red};
   --color-quaternary-light: #{$lightRed};
+  --color-quaternary-dark: #{darken($red, 10%)};
   --color-white: #{$white};
   --color-black: #{$black};
   --color-offwhite: #{$eggShell};
   --color-gray: #{$gray};
   --color-gray-light: #{$lightGray};
+
+  --overlay-primary: rgba(18, 101, 124, 0.8);
 
   --color-error: #{$error};
   --color-success: #{$success};
@@ -60,6 +68,15 @@
 
   --vertical-spacing: #{$vertical-spacing};
   --vertical-spacing-mobile: #{$vertical-spacing-mobile};
+
+  --header-spacing: #{$vertical-spacing / 2};
+  --header-spacing-mobile: #{$vertical-spacing-mobile / 2};
+
+  --footer-spacing: #{$vertical-spacing / 3};
+  --footer-spacing-mobile: #{$vertical-spacing-mobile / 3};
+
+  --section-heading-spacing: #{$vertical-spacing / 1.5};
+  --section-heading-spacing-mobile: #{$vertical-spacing-mobile / 1.5};
 
   --font-body: 'Roboto', sans-serif;
   --font-heading: 'Georgia', sans-serif;
@@ -80,4 +97,8 @@
   --border-radius-small: #{$size-4};
   --border-radius-medium: #{$size-8};
   --border-radius-large: #{$size-12};
+
+  --color-focus-outline: #{$red};
+  --color-focus-outline-secondary: #{$blue};
+  --focus-offset: #{$size-2};
 }

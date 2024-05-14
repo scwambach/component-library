@@ -3,7 +3,7 @@
   overflow: hidden;
 
   .slider {
-    transition: $transition;
+    transition: var(--transition);
   }
 
   .dots {
