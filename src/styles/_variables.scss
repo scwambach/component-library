@@ -76,4 +76,8 @@
   --body-margin: #{$size-8} 0;
 
   --transition: #{$transition};
+
+  --border-radius-small: #{$size-4};
+  --border-radius-medium: #{$size-8};
+  --border-radius-large: #{$size-12};
 }

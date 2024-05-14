@@ -1,16 +1,16 @@
 @mixin vertical-spacing-padding {
-  padding: $vertical-spacing 0;
+  padding: var(--vertical-spacing) 0;
 
   @media screen and (max-width: ($md - 1)) {
-    padding: $vertical-spacing-mobile 0;
+    padding: var(--vertical-spacing-mobile) 0;
   }
 }
 
 @mixin vertical-spacing-margin {
-  margin: $vertical-spacing 0;
+  margin: var(--vertical-spacing) 0;
 
   @media screen and (max-width: ($md - 1)) {
-    margin: $vertical-spacing-mobile 0;
+    margin: var(--vertical-spacing-mobile) 0;
   }
 }
 
@@ -46,15 +46,15 @@
 
 // customizable border radius mixin
 @mixin radius4 {
-  border-radius: $size-4;
+  border-radius: var(--border-radius-small);
 }
 
 @mixin radius8 {
-  border-radius: $size-8;
+  border-radius: var(--border-radius-medium);
 }
 
 @mixin radius12 {
-  border-radius: $size-12;
+  border-radius: var(--border-radius-large);
 }
 
 @mixin radius4overflow {
