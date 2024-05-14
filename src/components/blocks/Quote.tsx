@@ -5,7 +5,7 @@ import { QuoteProps } from '../../utils/types'
 
 export const Quote = (props: QuoteProps) => {
   const {
-    bgColor = 'green',
+    bgColor = 'secondary',
     cite,
     className,
     componentId,

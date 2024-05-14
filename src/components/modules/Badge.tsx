@@ -4,7 +4,7 @@ import { BadgeProps } from '../../utils/types'
 
 export const Badge = ({
   className,
-  color = 'red',
+  color = 'quaternary',
   componentId,
   elementTag = 'span',
   maxNumber,
