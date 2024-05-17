@@ -59,3 +59,8 @@ export { Tooltip } from './utility/Tooltip'
 
 export { slugify } from '../utils/slugify'
 export { repeater } from '../utils/repeater'
+
+export { Header } from './global/Header'
+export { Footer } from './global/Footer'
+export { PageBuilder } from './global/PageBuilder'
+export { PageLayout } from './global/PageLayout'
