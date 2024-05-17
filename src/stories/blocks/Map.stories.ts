@@ -1,5 +1,6 @@
 import { Map as MapItem } from '@components/blocks'
 import type { Meta, StoryObj } from '@storybook/react'
+import mapStyle from '../../utils/mapStyles'
 
 const meta: Meta<typeof MapItem> = {
   title: 'Components/Blocks',
@@ -12,6 +13,8 @@ type Story = StoryObj<typeof MapItem>
 
 export const Map: Story = {
   args: {
+    googleMapsApiKey: 'AIzaSyCWdtdxYMqxuFjeCYJ9Fe1mAIL3KdPybg8',
+    mapStyle,
     markers: [
       {
         lat: 37.963211,

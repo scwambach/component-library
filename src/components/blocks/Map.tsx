@@ -7,20 +7,15 @@ import {
   useLoadScript,
 } from '@react-google-maps/api'
 import { useCallback, useRef } from 'react'
-import mapStyle from '../../utils/mapStyles'
 import { Flex, Heading, Spinner } from '../utility'
 
 const libraries = ['places'] as Libraries
-
-const options = {
-  styles: mapStyle,
-  disableDefaultUI: true,
-}
 
 export const Map = ({
   className,
   componentId,
   googleMapsApiKey,
+  mapStyle,
   markers,
   style = {
     width: '100%',
@@ -32,6 +27,11 @@ export const Map = ({
     googleMapsApiKey,
     libraries,
   })
+
+  const options = {
+    styles: mapStyle,
+    disableDefaultUI: true,
+  }
 
   const mapRef = useRef()
   const onMapLoad = useCallback((map: any) => {
