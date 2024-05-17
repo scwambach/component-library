@@ -17,7 +17,7 @@ export const ButtonRow = ({
     <div
       id={componentId}
       data-testid={testId}
-      className={`buttonRow${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-buttonRow${className ? ` ${className}` : ''}`}
     >
       <Container>
         {heading && (

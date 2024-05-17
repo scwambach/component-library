@@ -12,7 +12,7 @@ export const Tooltip = ({
     <span
       id={componentId}
       data-testid={testId}
-      className={`tooltip${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-tooltip${className ? ` ${className}` : ''}`}
     >
       {children}
       <Box elementTag="span">{copy}</Box>

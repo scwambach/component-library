@@ -13,7 +13,7 @@ export const Breadcrumbs = ({
     <div
       id={componentId}
       data-testid={testId}
-      className={`breadcrumbs${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-breadcrumbs${className ? ` ${className}` : ''}`}
     >
       <nav aria-label="Breadcrumbs navigation">
         <Flex alignItems="center" gap="micro" noBreak className="unstyled">

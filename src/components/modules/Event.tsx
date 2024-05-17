@@ -60,7 +60,7 @@ export const Event = ({
     <Box
       componentId={componentId}
       testId={testId}
-      className={`event${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-event${className ? ` ${className}` : ''}`}
     >
       <Flex
         alignItems="flex-start"

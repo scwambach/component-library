@@ -31,7 +31,7 @@ export const Gallery = ({
     <section
       id={componentId}
       data-testid={testId}
-      className={`gallery${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-gallery${className ? ` ${className}` : ''}`}
     >
       <Container containerClass={container}>
         {heading && (

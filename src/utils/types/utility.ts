@@ -40,6 +40,7 @@ export interface FlexProps extends FlexGridProps {
   center?: boolean
   breakpoint?: BreakNames
   columnBreak?: BreakNames
+  flexWrap?: 'wrap' | 'nowrap' | 'wrap-reverse'
   noBreak?: boolean
   direction?: 'row' | 'column' | 'row-reverse' | 'column-reverse'
   fill?: boolean

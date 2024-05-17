@@ -25,7 +25,7 @@ export const Drawer = ({
   return (
     <span
       id={componentId}
-      className={`drawer${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-drawer${className ? ` ${className}` : ''}`}
     >
       <Button
         type="button"

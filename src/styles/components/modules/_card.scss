@@ -1,4 +1,4 @@
-.card {
+.wdrlscw-card {
   background-color: var(--color-white);
   border: $size-1 solid var(--color-gray-light);
   color: var(--color-black);
@@ -61,12 +61,12 @@
     margin-bottom: $size-16;
   }
 
-  .avatars {
+  .wdrlscw-avatars {
     position: relative;
     z-index: 2;
   }
 
-  .heading {
+  .wdrlscw-heading {
     font-size: $size-24;
     margin: 0 0 $size-16 0;
     display: -webkit-box;
@@ -91,7 +91,7 @@
   }
 }
 
-.card {
+.wdrlscw-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -166,7 +166,7 @@
       }
     }
 
-    .avatar {
+    .wdrlscw-avatar {
       border-radius: 100%;
       outline: $size-1 solid var(--color-white);
       position: relative;

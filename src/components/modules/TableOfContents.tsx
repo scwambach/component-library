@@ -42,7 +42,7 @@ export const TableOfContents = ({
       <div
         id={componentId}
         data-testid={testId}
-        className={`tableOfContents${className ? ` ${className}` : ''}`}
+        className={`wdrlscw-tableOfContents${className ? ` ${className}` : ''}`}
       >
         <Heading level={2} nonHeadingElement="p">
           Table of Contents

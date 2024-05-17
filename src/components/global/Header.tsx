@@ -17,7 +17,7 @@ export const Header = ({
   const [menuOpen, setMenuOpen] = useState(false)
   const { data: session } = useSession()
   return (
-    <header>
+    <header className="wdrlscw-header">
       <div className="container">
         <Flex
           ariaLabel="Main Navigation"

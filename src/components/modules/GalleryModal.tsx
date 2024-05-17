@@ -25,7 +25,7 @@ export const GalleryModal = ({
   return (
     <div
       id={componentId}
-      className={`galleryModal ${isModalOpen ? 'open' : 'closed'}`}
+      className={`wdrlscw-galleryModal ${isModalOpen ? 'open' : 'closed'}`}
     >
       <Button
         className="close"

@@ -23,7 +23,7 @@ export const People = ({
     <section
       id={componentId}
       data-testid={testId}
-      className={`people${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-people${className ? ` ${className}` : ''}`}
     >
       <Container containerClass={container}>
         {heading && (

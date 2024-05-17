@@ -2,6 +2,7 @@ import { FlexProps } from '../../utils/types'
 
 export const Flex = ({
   alignItems = 'flex-start',
+  flexWrap,
   ariaLabel,
   breakpoint,
   children,
@@ -28,7 +29,9 @@ export const Flex = ({
       role={role}
       style={style}
       aria-label={ariaLabel}
-      className={`flex direction-${direction} align-${alignItems} justify-${justifyContent} gap-${gap} column-${
+      className={`wdrlscw-flex direction-${direction} align-${alignItems}${
+        flexWrap ? ` wrap-${flexWrap}` : ''
+      } justify-${justifyContent} gap-${gap} column-${
         columnBreak && !noBreak ? columnBreak : ''
       }${className ? ` ${className}` : ''}${
         customLayout ? ` ${customLayout}` : ''

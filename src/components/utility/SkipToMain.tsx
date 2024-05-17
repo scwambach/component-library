@@ -5,7 +5,7 @@ import { Button } from '../modules'
 export const SkipToMain = () => {
   return (
     <Button
-      className="skipToMain"
+      className="wdrlscw-skipToMain"
       onClick={() => {
         const main = document.getElementById('bodyContent')
         if (main) {

@@ -1,8 +1,8 @@
-.logoRow {
+.wdrlscw-logoRow {
   padding: $size-32 0;
   background-color: var(--color-gray-light);
 
-  .flex {
+  .wdrlscw-flex {
     @media screen and (max-width: ($sm - 1)) {
       gap: $size-32;
     }

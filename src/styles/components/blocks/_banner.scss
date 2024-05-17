@@ -1,4 +1,4 @@
-.banner {
+.wdrlscw-banner {
   @include vertical-spacing-padding;
   position: relative;
   overflow: hidden;
@@ -41,7 +41,7 @@
         padding: $size-80 $size-16;
       }
 
-      > div:not(.imageObject) {
+      > div:not(.wdrlscw-imageObject) {
         position: relative;
         z-index: 2;
       }
@@ -122,7 +122,7 @@
       color: var(--color-white);
     }
 
-    .breadcrumbs {
+    .wdrlscw-breadcrumbs {
       a {
         color: var(--color-white);
       }
@@ -146,7 +146,7 @@
     margin-bottom: $size-16;
   }
 
-  .container {
+  .wdrlscw-container {
     z-index: 2;
     position: relative;
   }
@@ -165,7 +165,7 @@
     }
   }
 
-  .heading {
+  .wdrlscw-heading {
     font-size: $size-48;
 
     @media screen and (max-width: ($md - 1)) {
@@ -177,7 +177,7 @@
     }
   }
 
-  .breadcrumbs {
+  .wdrlscw-breadcrumbs {
     margin-bottom: $size-16;
   }
 }

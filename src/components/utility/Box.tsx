@@ -18,7 +18,7 @@ export const Box = ({
       id={componentId}
       style={style}
       data-testid={testId}
-      className={`box${shadow ? ` shadow-${shadow}` : ''}${
+      className={`wdrlscw-box${shadow ? ` shadow-${shadow}` : ''}${
         radius ? ` radius-${radius}${overflow ? '-overflow' : ''}` : ''
       }${className ? ` ${className}` : ''}`}
     >

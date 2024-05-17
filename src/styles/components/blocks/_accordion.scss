@@ -1,6 +1,6 @@
-.accordion {
+.wdrlscw-accordion {
   &.open {
-    .button {
+    .wdrlscw-button {
       .suffix {
         transform: rotate(180deg);
       }
@@ -10,7 +10,7 @@
       margin: $size-16 0;
     }
   }
-  .button {
+  .wdrlscw-button {
     width: 100%;
     justify-content: space-between;
     font-size: $size-20;

@@ -26,7 +26,7 @@ export const Modal = ({
   return (
     <span
       id={componentId}
-      className={`modal${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-modal${className ? ` ${className}` : ''}`}
     >
       <Button
         type="button"

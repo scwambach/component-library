@@ -24,7 +24,7 @@ export const Card = ({
     <Box
       componentId={componentId}
       testId={testId}
-      className={`card${href ? ' link' : ''}${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-card${href ? ' link' : ''}${className ? ` ${className}` : ''}`}
     >
       {tags && (
         <Flex gap="xxs" className="tags" columnBreak="none">

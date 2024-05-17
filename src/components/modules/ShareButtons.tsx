@@ -18,7 +18,7 @@ export const ShareButtons = ({
     <div
       id={componentId}
       data-testid={testId}
-      className={`shareButtons${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-shareButtons${className ? ` ${className}` : ''}`}
     >
       <Flex columnBreak="none" gap="xxs" justifyContent="flex-start">
         <Button

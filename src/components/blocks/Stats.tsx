@@ -21,7 +21,7 @@ export const Stats = ({
     <div
       id={componentId}
       data-testid={testId}
-      className={`stats${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-stats${className ? ` ${className}` : ''}`}
     >
       <Container containerClass={container}>
         {heading && (

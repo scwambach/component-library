@@ -61,7 +61,7 @@ export const FormField = ({
       {type === 'textarea' ? (
         <label
           data-testid={testId}
-          className={`formField${className ? ` ${className}` : ''} ${type}${
+          className={`wdrlscw-formField${className ? ` ${className}` : ''} ${type}${
             disabled ? ' disabled' : ''
           }`}
           htmlFor={fieldId}
@@ -74,7 +74,7 @@ export const FormField = ({
       ) : type === 'select' ? (
         <label
           data-testid={testId}
-          className={`formField${className ? ` ${className}` : ''} ${type}`}
+          className={`wdrlscw-formField${className ? ` ${className}` : ''} ${type}`}
           htmlFor={fieldId}
         >
           <Flex direction="column" gap="xxs">
@@ -97,7 +97,7 @@ export const FormField = ({
               ? `checkbox_${slugify(label)}_${id}`
               : `radio_${slugify(label)}_${id}`
           }
-          className={`formField${className ? ` ${className}` : ''} ${type}${
+          className={`wdrlscw-formField${className ? ` ${className}` : ''} ${type}${
             disabled ? ' disabled' : ''
           }`}
         >
@@ -150,7 +150,7 @@ export const FormField = ({
       ) : type === 'multiselect' ? (
         <label
           data-testid={testId}
-          className={`formField${className ? ` ${className}` : ''} ${type}`}
+          className={`wdrlscw-formField${className ? ` ${className}` : ''} ${type}`}
           htmlFor={fieldId}
         >
           <Flex direction="column" gap="xxs">
@@ -180,7 +180,7 @@ export const FormField = ({
         <label
           data-testid={testId}
           htmlFor={fieldId}
-          className={`formField${className ? ` ${className}` : ''} ${type}${
+          className={`wdrlscw-formField${className ? ` ${className}` : ''} ${type}${
             disabled ? ' disabled' : ''
           }`}
         >
@@ -203,7 +203,7 @@ export const FormField = ({
         <label
           data-testid={testId}
           htmlFor={fieldId}
-          className={`formField${className ? ` ${className}` : ''} ${type}${
+          className={`wdrlscw-formField${className ? ` ${className}` : ''} ${type}${
             disabled ? ' disabled' : ''
           }`}
         >

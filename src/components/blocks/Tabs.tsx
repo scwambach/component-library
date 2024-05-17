@@ -23,7 +23,7 @@ export const Tabs = ({
     <section
       id={componentId}
       data-testid={testId}
-      className={`tabs${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-tabs${className ? ` ${className}` : ''}`}
     >
       <Container containerClass={container}>
         {heading && (

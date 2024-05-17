@@ -10,7 +10,10 @@ export const Dots = ({
   setActiveIndex,
 }: DotsProps) => {
   return (
-    <div id={componentId} className={`dots${className ? ` ${className}` : ''}`}>
+    <div
+      id={componentId}
+      className={`wdrlscw-dots${className ? ` ${className}` : ''}`}
+    >
       <Flex gap="xxs" justifyContent="center" noBreak>
         {Array.from({ length: count }, (_, i) => (
           <Button

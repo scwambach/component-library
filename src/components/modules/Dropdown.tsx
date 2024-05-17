@@ -37,7 +37,7 @@ export const Dropdown = ({ items, ...props }: DropdownProps) => {
     <div
       id={props.componentId}
       ref={ref}
-      className={`dropdown${open ? ' open' : ''}${props.className ? ` ${props.className}` : ''}`}
+      className={`wdrlscw-dropdown${open ? ' open' : ''}${props.className ? ` ${props.className}` : ''}`}
     >
       <Button
         suffixIcon="CaretDown"

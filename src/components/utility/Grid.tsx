@@ -21,7 +21,7 @@ export const Grid = ({
       aria-label={ariaLabel}
       id={componentId}
       style={style}
-      className={`grid gap-${gap} columns-${columns}${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-grid gap-${gap} columns-${columns}${className ? ` ${className}` : ''}`}
       data-testid={testId}
     >
       {children}

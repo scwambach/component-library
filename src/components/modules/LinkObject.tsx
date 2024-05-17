@@ -18,6 +18,7 @@ export const LinkObject = ({
   onBlur,
 }: LinkObjectProps) => {
   const isInternal = href.startsWith('/')
+  const classes = `wdrlscw-linkObject${className ? ` ${className}` : ''}`
   return isInternal ? (
     <Link
       role={role}
@@ -25,7 +26,7 @@ export const LinkObject = ({
       style={style}
       data-testid={testId}
       aria-label={ariaLabel}
-      className={`linkObject${className ? ` ${className}` : ''}`}
+      className={classes}
       href={href}
       onMouseOver={onMouseOver}
       onMouseOut={onMouseOut}
@@ -41,7 +42,7 @@ export const LinkObject = ({
       id={componentId}
       style={style}
       data-testid={testId}
-      className={`linkObject${className ? ` ${className}` : ''}`}
+      className={classes}
       href={href}
       aria-label={ariaLabel}
       target="_blank"

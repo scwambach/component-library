@@ -15,7 +15,7 @@ export const Markdown = ({
     <Element
       data-testid={testId}
       id={componentId}
-      className={`markdown${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-markdown${className ? ` ${className}` : ''}`}
       dangerouslySetInnerHTML={{
         __html: parseMarkdownToHTML(children),
       }}

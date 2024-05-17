@@ -20,7 +20,7 @@ export const Videos = ({
     <section
       id={componentId}
       data-testid={testId}
-      className={`videos${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-videos${className ? ` ${className}` : ''}`}
     >
       <Container containerClass={container}>
         {heading && (

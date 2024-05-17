@@ -17,12 +17,13 @@ export const ContactBlock = (props: ContactBlockProps) => {
     headingLevel,
     information,
     container,
+    mapStyle,
   } = props
   return (
     <section
       id={componentId}
       data-testid={testId}
-      className={`contactBlock${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-contactBlock${className ? ` ${className}` : ''}`}
     >
       <Container containerClass={container}>
         <Flex fill gap="md" alignItems="center" justifyContent="center">
@@ -81,12 +82,7 @@ export const ContactBlock = (props: ContactBlockProps) => {
               </Flex>
             </div>
           )}
-          {marker && (
-            <Map
-              markers={[marker]}
-              googleMapsApiKey={process.env.GOOGLE_MAP_API_KEY as string}
-            />
-          )}
+          {marker && <Map markers={[marker]} mapStyle={mapStyle} />}
         </Flex>
       </Container>
     </section>

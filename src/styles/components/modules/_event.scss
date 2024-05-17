@@ -1,4 +1,4 @@
-.event {
+.wdrlscw-event {
   padding: $size-16 $size-8;
   transition: var(--transition);
 
@@ -32,7 +32,7 @@
       padding-bottom: 56.25%;
     }
 
-    .button {
+    .wdrlscw-button {
       @media screen and (max-width: ($sm - 1)) {
         pointer-events: none;
       }
@@ -76,7 +76,7 @@
       font-weight: bold;
     }
 
-    .heading {
+    .wdrlscw-heading {
       font-size: $size-24;
       margin: 0;
     }

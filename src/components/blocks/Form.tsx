@@ -19,7 +19,7 @@ const Form = ({
   return (
     <section
       id={componentId}
-      className={`form${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-form${className ? ` ${className}` : ''}`}
       data-testid={testId}
     >
       <Container containerClass={container}>

@@ -1,6 +1,7 @@
 import { ContactBlock as ContactBlockItem } from '@components/blocks'
 import type { Meta, StoryObj } from '@storybook/react'
 import * as Icon from '@phosphor-icons/react'
+import mapStyle from '@utils/mapStyles'
 
 const meta: Meta<typeof ContactBlockItem> = {
   title: 'Components/Blocks',
@@ -15,6 +16,7 @@ export const ContactBlock: Story = {
   args: {
     heading: 'Contact Us',
     headingLevel: 2,
+    mapStyle,
     subheading: "We're here to help",
     marker: {
       lat: 40.7128,

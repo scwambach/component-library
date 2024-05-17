@@ -126,7 +126,7 @@ export const Banner = ({
   return (
     <section
       id={componentId}
-      className={`banner ${bgColor}${contained && overlap ? ' overlap' : ''}${
+      className={`wdrlscw-banner ${bgColor}${contained && overlap ? ' overlap' : ''}${
         contained ? ' contained' : ''
       }${className ? ` ${className}` : ''}${
         backgroundImage ? ' has-image' : ''

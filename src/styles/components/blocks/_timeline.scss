@@ -1,4 +1,4 @@
-.timeline {
+.wdrlscw-timeline {
   @include vertical-spacing-margin;
 
   .eventItems {
@@ -174,8 +174,8 @@
         }
       }
 
-      .imageObject,
-      .box,
+      .wdrlscw-imageObject,
+      .wdrlscw-box,
       img {
         width: 100%;
       }

@@ -44,7 +44,7 @@ export const Accordion = ({
       id={componentId}
       data-testid={testId}
       ref={ref}
-      className={`accordion${
+      className={`wdrlscw-accordion${
         open ? ' open' : ''
       }${className ? ` ${className}` : ''}`}
     >

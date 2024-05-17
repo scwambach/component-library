@@ -14,7 +14,6 @@ const libraries = ['places'] as Libraries
 export const Map = ({
   className,
   componentId,
-  googleMapsApiKey,
   mapStyle,
   markers,
   style = {
@@ -24,7 +23,7 @@ export const Map = ({
   testId,
 }: MapProps) => {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey,
+    googleMapsApiKey: process.env.GOOGLE_MAP_API_KEY as string,
     libraries,
   })
 
@@ -74,7 +73,7 @@ export const Map = ({
       id={componentId}
       data-testid={testId}
       style={style}
-      className={`map${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-map${className ? ` ${className}` : ''}`}
     >
       <GoogleMap
         center={markers[0]}

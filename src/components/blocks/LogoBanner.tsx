@@ -15,7 +15,7 @@ export const LogoBanner = ({
     <section
       id={componentId}
       data-testid={testId}
-      className={`logoBanner${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-logoBanner${className ? ` ${className}` : ''}`}
     >
       <ImageObject {...backgroundImage} alt="" isBackground />
       {logo && (

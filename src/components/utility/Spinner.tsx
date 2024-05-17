@@ -11,7 +11,7 @@ export const Spinner = ({
     <div
       id={componentId}
       data-testid={testId}
-      className={`spinner${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-spinner${className ? ` ${className}` : ''}`}
       style={{
         width: `${size}px`,
         height: `${size}px`,

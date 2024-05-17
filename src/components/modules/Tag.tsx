@@ -17,7 +17,7 @@ export const Tag = ({
       radius={4}
       testId={testId}
       elementTag={elementTag}
-      className={`tagItem ${theme}${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-tagItem ${theme}${className ? ` ${className}` : ''}`}
     >
       {href ? <LinkObject href={href}>{label}</LinkObject> : label}
     </Box>

@@ -22,7 +22,7 @@ export const ImageObject = ({
     <div
       id={componentId}
       data-testid={testId}
-      className={`imageObject${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-imageObject${className ? ` ${className}` : ''}`}
       data-label={`${isBackground ? 'background' : 'image'}-container`}
     >
       {imageSrc && (

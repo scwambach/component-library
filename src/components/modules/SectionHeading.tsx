@@ -14,7 +14,7 @@ export const SectionHeading = ({
     <div
       id={componentId}
       data-testid={testId}
-      className={`sectionHeading${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-sectionHeading${className ? ` ${className}` : ''}`}
     >
       {heading && <Heading level={headingLevel}>{heading}</Heading>}
       {subheading && (

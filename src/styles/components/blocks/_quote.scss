@@ -1,4 +1,4 @@
-.quote {
+.wdrlscw-quote {
   @include vertical-spacing-padding;
 
   @media screen and (min-width: ($sm)) {
@@ -41,7 +41,7 @@
     margin-top: $size-32;
 
     > div {
-      &.flex {
+      &.wdrlscw-flex {
         @media screen and (max-width: ($sm - 1)) {
           width: 100%;
           align-items: flex-start;

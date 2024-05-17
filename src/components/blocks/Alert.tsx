@@ -44,7 +44,7 @@ export const Alert = ({
     <div
       data-testid={testId}
       id={componentId}
-      className={`alert ${type}${className ? ` ${className}` : ''}${
+      className={`wdrlscw-alert ${type}${className ? ` ${className}` : ''}${
         loading || remove ? ' hide' : ''
       }`}
     >

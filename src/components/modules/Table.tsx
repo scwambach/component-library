@@ -10,7 +10,7 @@ export const Table = ({
   return (
     <table
       id={componentId}
-      className={`table${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-table${className ? ` ${className}` : ''}`}
     >
       {headingRow && headingRow.length > 0 && (
         <thead>

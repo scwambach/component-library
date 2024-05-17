@@ -1,8 +1,8 @@
-.richText {
+.wdrlscw-richText {
   @include vertical-spacing-margin;
 
   &.centered {
-    .markdown {
+    .wdrlscw-markdown {
       display: flex;
       flex-direction: column;
       align-items: center;

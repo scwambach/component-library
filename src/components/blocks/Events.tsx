@@ -18,7 +18,7 @@ export const Events = ({
   return (
     <section
       id={componentId}
-      className={`events${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-events${className ? ` ${className}` : ''}`}
       data-testid={testId}
     >
       <Container containerClass={container}>

@@ -38,7 +38,7 @@ export const Stat = ({
     <Box
       componentId={componentId}
       shadow={2}
-      className={`stat ${theme}${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-stat ${theme}${className ? ` ${className}` : ''}`}
       testId={testId}
     >
       <Flex columnBreak="xxs" gap="xs">

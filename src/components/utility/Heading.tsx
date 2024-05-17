@@ -15,7 +15,7 @@ export const Heading = ({
     <HeadingTag
       id={componentId}
       data-testid={testId}
-      className={`heading${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-heading${className ? ` ${className}` : ''}`}
     >
       {children}
     </HeadingTag>

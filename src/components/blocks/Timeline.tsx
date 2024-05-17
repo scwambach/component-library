@@ -18,7 +18,7 @@ export const Timeline = ({
     <section
       id={componentId}
       data-testid={testId}
-      className={`timeline${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-timeline${className ? ` ${className}` : ''}`}
     >
       <Container containerClass={container}>
         {heading && (

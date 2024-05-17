@@ -12,7 +12,7 @@ export const Container = ({
     <div
       id={componentId}
       data-testid={testId}
-      className={`container${padded ? ` padded` : ''}${
+      className={`wdrlscw-container${padded ? ` padded` : ''}${
         containerClass ? ` ${containerClass}` : ''
       }${className ? ` ${className}` : ''}`}
     >

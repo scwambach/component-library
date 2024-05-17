@@ -31,7 +31,7 @@ export const VideoBlock = ({
       direction="column"
       gap="xxs"
       alignItems="stretch"
-      className={`videoBlock${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-videoBlock${className ? ` ${className}` : ''}`}
       testId={testId}
     >
       <Box>

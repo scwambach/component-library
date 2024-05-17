@@ -70,20 +70,20 @@ describe('Stats Component', () => {
 
   it('renders correct number of columns based on item count', () => {
     const { container } = render(<Stats {...defaultProps} />)
-    const grid = container.querySelector('.stats .grid')
+    const grid = container.querySelector('.stats .wdrlscw-grid')
     expect(grid).toHaveClass('columns-2') // Since we have 2 items in defaultProps
   })
 
   it('renders with default gap when not provided', () => {
     const { container } = render(<Stats {...defaultProps} gap={undefined} />)
-    const grid = container.querySelector('.stats .grid')
+    const grid = container.querySelector('.stats .wdrlscw-grid')
     expect(grid).toHaveClass('gap-xs')
   })
 
   it('renders with custom gap when provided', () => {
     const customGap = 'md'
     const { container } = render(<Stats {...defaultProps} gap={customGap} />)
-    const grid = container.querySelector('.stats .grid')
+    const grid = container.querySelector('.stats .wdrlscw-grid')
     expect(grid).toHaveClass(`gap-${customGap}`)
   })
 

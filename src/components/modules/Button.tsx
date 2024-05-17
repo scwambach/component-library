@@ -27,7 +27,7 @@ export const Button = ({
   type = 'link',
   unstyled,
 }: ButtonProps) => {
-  const classList = `button${theme && !unstyled ? ` ${theme}` : ''}${className ? ` ${className}` : ''}${unstyled ? ' unstyled' : ''}${
+  const classList = `wdrlscw-button${theme && !unstyled ? ` ${theme}` : ''}${className ? ` ${className}` : ''}${unstyled ? ' unstyled' : ''}${
     small ? ' small' : ''
   }${disabled ? ' disabled' : ''}`
   return (

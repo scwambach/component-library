@@ -33,7 +33,7 @@ export const CompareTable = ({
       radius={8}
       componentId={componentId}
       data-testid={testId}
-      className={`compareTable ${theme}${className ? ` ${className}` : ''}${
+      className={`wdrlscw-compareTable ${theme}${className ? ` ${className}` : ''}${
         highlight ? ' highlight' : ''
       }`}
     >

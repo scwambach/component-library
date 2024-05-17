@@ -18,7 +18,7 @@ export const Person = ({
     <div
       id={componentId}
       data-testid={testId}
-      className={`person${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-person${className ? ` ${className}` : ''}`}
     >
       <Flex direction="column" gap="xxs" alignItems="stretch">
         <Box overflow className="image">

@@ -11,7 +11,7 @@ export const Spacer = ({
     <div
       data-testid={testId}
       id={componentId}
-      className={`spacer${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-spacer${className ? ` ${className}` : ''}`}
       style={{
         padding: `${size}rem 0 ${size}rem 0`,
       }}

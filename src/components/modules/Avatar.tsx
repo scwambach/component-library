@@ -24,7 +24,7 @@ export const Avatar = ({
         height: `${size}rem`,
         width: `${size}rem`,
       }}
-      className={`avatar${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-avatar${className ? ` ${className}` : ''}`}
     >
       {!image && (
         <span

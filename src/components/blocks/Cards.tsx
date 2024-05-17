@@ -70,7 +70,7 @@ export const Cards = ({
     <section
       id={componentId}
       data-testid={testId}
-      className={`cards${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-cards${className ? ` ${className}` : ''}`}
     >
       <Container containerClass={container}>
         {heading && (

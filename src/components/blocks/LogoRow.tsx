@@ -14,7 +14,7 @@ export const LogoRow = ({
     <div
       id={componentId}
       data-testid={testId}
-      className={`logoRow${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-logoRow${className ? ` ${className}` : ''}`}
     >
       <Flex justifyContent="center" alignItems="center" gap="xl">
         {items.map((item) => {

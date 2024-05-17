@@ -62,7 +62,7 @@ describe('People Component', () => {
 
   it('renders default column size when not provided', () => {
     const { container } = render(<People items={mockedPeople} />)
-    const gridElement = container.querySelector('.grid')
+    const gridElement = container.querySelector('.wdrlscw-grid')
     expect(gridElement).toHaveClass('columns-3')
   })
 
@@ -71,13 +71,13 @@ describe('People Component', () => {
     const { container } = render(
       <People items={mockedPeople} columns={customColumns} />
     )
-    const gridElement = container.querySelector('.grid')
+    const gridElement = container.querySelector('.wdrlscw-grid')
     expect(gridElement).toHaveClass(`columns-${customColumns}`)
   })
 
   it('renders default gap size when not provided', () => {
     const { container } = render(<People items={mockedPeople} />)
-    const gridElement = container.querySelector('.grid')
+    const gridElement = container.querySelector('.wdrlscw-grid')
     expect(gridElement).toHaveClass('gap-sm')
   })
 
@@ -86,7 +86,7 @@ describe('People Component', () => {
     const { container } = render(
       <People items={mockedPeople} gap={customGap} />
     )
-    const gridElement = container.querySelector('.grid')
+    const gridElement = container.querySelector('.wdrlscw-grid')
     expect(gridElement).toHaveClass(`gap-${customGap}`)
   })
 })

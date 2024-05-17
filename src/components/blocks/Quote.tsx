@@ -18,7 +18,7 @@ export const Quote = (props: QuoteProps) => {
     <section
       id={componentId}
       data-testid={testId}
-      className={`quote ${bgColor}${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-quote ${bgColor}${className ? ` ${className}` : ''}`}
     >
       <Container containerClass="narrower">
         <Quotes size={40} />

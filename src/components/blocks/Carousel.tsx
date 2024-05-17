@@ -31,7 +31,7 @@ export const Carousel = ({
     <div
       id={componentId}
       data-testid={testId}
-      className={`carousel${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-carousel${className ? ` ${className}` : ''}`}
     >
       <Flex
         className="slider"

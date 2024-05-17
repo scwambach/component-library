@@ -20,7 +20,7 @@ export const River = ({
       elementTag="section"
       gap="sm"
       testId={testId}
-      className={`river${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-river${className ? ` ${className}` : ''}`}
     >
       <Container containerClass={container}>
         <Flex direction="column" gap="sm">

@@ -1,8 +1,8 @@
-.avatar {
+.wdrlscw-avatar {
   position: relative;
 
-  span:not(.badge),
-  .imageObject {
+  span:not(.wdrlscw-badge),
+  .wdrlscw-imageObject {
     border-radius: 100%;
     overflow: hidden;
     background-color: var(--color-quaternary-light);
@@ -15,7 +15,7 @@
     width: 100%;
   }
 
-  .badge {
+  .wdrlscw-badge {
     position: absolute;
     top: 0;
     right: -$size-3;

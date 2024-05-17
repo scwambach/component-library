@@ -62,7 +62,7 @@ export const Portable = ({
     <Element
       data-testid={testId}
       id={componentId}
-      className={`portable${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-portable${className ? ` ${className}` : ''}`}
     >
       <PortableText value={content} components={customBlockComponents} />
     </Element>

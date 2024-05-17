@@ -24,7 +24,7 @@ export const RichText = ({
     <section
       id={componentId}
       data-testid={testId}
-      className={`richText${className ? ` ${className}` : ''}${
+      className={`wdrlscw-richText${className ? ` ${className}` : ''}${
         centered ? ' centered' : ''
       }`}
     >

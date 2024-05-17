@@ -18,7 +18,7 @@ export const CompareTables = ({
     <div
       id={componentId}
       data-testid={testId}
-      className={`compareTables${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-compareTables${className ? ` ${className}` : ''}`}
     >
       <Container containerClass="narrow">
         {heading && (

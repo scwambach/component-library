@@ -1,11 +1,11 @@
-.sectionHeading {
+.wdrlscw-sectionHeading {
   margin-bottom: var(--section-heading-spacing);
 
   @media screen and (max-width: ($md - 1)) {
     margin-bottom: var(--section-heading-spacing-mobile);
   }
 
-  .heading {
+  .wdrlscw-heading {
     font-size: $size-32;
 
     + div {

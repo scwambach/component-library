@@ -87,6 +87,7 @@ export interface CompareTablesProps extends BlockProps {
 
 export interface ContactBlockProps extends BlockProps {
   marker?: MapMarker
+  mapStyle?: any
   information: ContactInfoProps
   container?: ContainerClasses
 }

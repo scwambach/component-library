@@ -1,11 +1,11 @@
-header {
+.wdrlscw-header {
   padding: var(--header-spacing) 0;
 
   @media screen and (max-width: ($md - 1)) {
     padding: var(--header-spacing-mobile) 0;
   }
 
-  .heading {
+  .wdrlscw-heading {
     margin: 0;
   }
 
@@ -13,7 +13,7 @@ header {
     margin: 0;
   }
 
-  .dropdown {
+  .wdrlscw-dropdown {
     .menu {
       right: 0;
       min-width: $size-200;
@@ -27,7 +27,7 @@ header {
         box-shadow: none;
 
         a {
-          &.linkObject {
+          &.wdrlscw-linkObject {
             border-bottom: 1px solid var(--color-white);
             color: var(--color-white);
           }
@@ -37,7 +37,7 @@ header {
   }
 
   .navToggle {
-    &.button {
+    &.wdrlscw-button {
       position: relative;
       z-index: 101;
       display: flex;
@@ -91,7 +91,7 @@ header {
       }
     }
 
-    &.flex {
+    &.wdrlscw-flex {
       @media screen and (max-width: ($sm - 1)) {
         position: fixed;
         height: 100%;

@@ -17,7 +17,7 @@ export const Badge = ({
     <Element
       id={componentId}
       data-testid={testId}
-      className={`badge ${color}${className ? ` ${className}` : ''}`}
+      className={`wdrlscw-badge ${color}${className ? ` ${className}` : ''}`}
     >
       {maxNumber ? maxPlus(number, maxNumber) : addCommas(number)}
     </Element>
