@@ -5,6 +5,11 @@
   &:hover {
     background-color: var(--color-white);
     box-shadow: $box-shadow-2;
+    color: var(--color-black);
+
+    a:not(.wdrlscw-button) {
+      color: var(--color-primary);
+    }
   }
 
   .info {

@@ -4,6 +4,7 @@ import { Container, Flex } from '../utility'
 import { Spacer } from '../utility'
 import { EventsProps } from '../../utils/types'
 import { Fragment } from 'react'
+import { BlockWrapper } from '@components/utility/BlockWrapper'
 
 export const Events = ({
   className,
@@ -14,12 +15,14 @@ export const Events = ({
   headingLevel,
   subheading,
   testId,
+  ...props
 }: EventsProps) => {
   return (
-    <section
-      id={componentId}
+    <BlockWrapper
+      componentId={componentId}
+      testId={testId}
       className={`wdrlscw-events${className ? ` ${className}` : ''}`}
-      data-testid={testId}
+      {...props}
     >
       <Container containerClass={container}>
         {heading && (
@@ -38,6 +41,6 @@ export const Events = ({
           ))}
         </Flex>
       </Container>
-    </section>
+    </BlockWrapper>
   )
 }

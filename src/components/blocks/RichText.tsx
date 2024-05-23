@@ -1,10 +1,12 @@
 import { Container, Grid, Markdown, Portable } from '../utility'
 import { ColumnSize, RichTextProps } from '../../utils/types'
+import { BlockWrapper } from '@components/utility/BlockWrapper'
 
 // TODO: Create RichText tests and stories
 
 export const RichText = ({
   centered,
+  elementTag = 'section',
   className,
   column2Copy,
   column3Copy,
@@ -15,18 +17,21 @@ export const RichText = ({
   gap = 'sm',
   markdown,
   testId,
+  bgColor,
 }: RichTextProps) => {
   const columnCount = [copy, column2Copy, column3Copy, column4Copy].filter(
     (column) => column
   ).length as ColumnSize
 
   return (
-    <section
-      id={componentId}
-      data-testid={testId}
+    <BlockWrapper
+      componentId={componentId}
+      testId={testId}
+      elementTag={elementTag}
       className={`wdrlscw-richText${className ? ` ${className}` : ''}${
         centered ? ' centered' : ''
       }`}
+      bgColor={bgColor}
     >
       <Container containerClass={container}>
         <Grid columns={columnCount} gap={gap}>
@@ -47,6 +52,6 @@ export const RichText = ({
           )}
         </Grid>
       </Container>
-    </section>
+    </BlockWrapper>
   )
 }

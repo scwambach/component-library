@@ -15,6 +15,7 @@ type Story = StoryObj<typeof RiverItem>
 export const Default: Story = {
   args: {
     headingLevel: 2,
+    bgColor: 'secondary-light',
     markdown: true,
     items: [
       {

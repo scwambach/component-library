@@ -2,6 +2,7 @@ import * as Icon from '@phosphor-icons/react'
 import { CSSProperties, ReactNode } from 'react'
 import {
   ButtonTypes,
+  Colors,
   ContainerClasses,
   Elements,
   Gaps,
@@ -33,6 +34,8 @@ export interface BlockProps extends ComponentProps {
   headingLevel?: HeadingLevel
   subheading?: string | any[]
   container?: ContainerClasses
+  bgColor?: Colors
+  backgroundImage?: ImageObjectProps
 }
 
 export interface FlexGridProps extends ComponentProps {

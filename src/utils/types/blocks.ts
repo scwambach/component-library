@@ -27,28 +27,22 @@ export interface AlertProps extends ComponentProps {
   type: AlertTypes
 }
 
-export interface BannerProps extends ComponentProps {
+export interface BannerProps extends BlockProps {
   authors?: PersonProps[]
-  backgroundImage?: ImageObjectProps
-  bgColor?: Colors
   markdown?: boolean
   boxBgColor?: Colors
   contained?: boolean
-  containedWidth?: ContainerClasses
   crumbs?: {
     current?: string
     items?: BreadcrumbsProps['crumbs']
   }
   date?: string
   foregroundMedia?: any
-  heading: string
-  headingLevel?: HeadingLevel
   links?: ButtonProps[]
   message?: string
   micro?: boolean
   overlap?: boolean
   style?: CSSProperties
-  subheading?: string | any[]
   tags?: TagProps[]
 }
 
@@ -120,6 +114,7 @@ export interface LogoRowProps extends ComponentProps {
 export interface MapProps extends ComponentProps {
   style?: CSSProperties
   mapStyle?: any
+  googleMapsApiKey?: string
   markers: MapMarker[]
 }
 
@@ -144,6 +139,7 @@ export interface QuoteProps extends ComponentProps {
 
 export interface RichTextProps extends ComponentProps {
   centered?: boolean
+  elementTag?: keyof JSX.IntrinsicElements
   column2Copy?: string | any[]
   column3Copy?: string | any[]
   column4Copy?: string | any[]
@@ -152,10 +148,12 @@ export interface RichTextProps extends ComponentProps {
   copy: string | any[]
   gap?: Gaps
   markdown?: boolean
+  bgColor?: Colors
 }
 
 export interface RiverProps extends ComponentProps {
   theme?: Themes
+  bgColor?: Colors
   headingLevel?: HeadingLevel
   markdown?: boolean
   reverse?: boolean
@@ -196,6 +194,7 @@ export interface TimelineProps extends BlockProps {
 export interface VideosProps extends BlockProps {
   items: VideoBlockProps[]
   columns?: ColumnSize
+  boxRadius?: 4 | 8 | 12
   gap?: Gaps
   button?: ButtonProps
 }

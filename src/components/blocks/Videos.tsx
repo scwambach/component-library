@@ -2,6 +2,7 @@ import { Button, SectionHeading } from '../modules'
 import { VideoBlock } from '../modules/VideoBlock'
 import { Container, Flex, Grid, Spacer } from '../utility'
 import { VideosProps } from '../../utils/types'
+import { BlockWrapper } from '@components/utility/BlockWrapper'
 
 export const Videos = ({
   button,
@@ -11,16 +12,19 @@ export const Videos = ({
   container,
   gap = 'md',
   heading,
+  boxRadius,
   items,
   headingLevel,
   subheading,
   testId,
+  ...props
 }: VideosProps) => {
   return (
-    <section
-      id={componentId}
-      data-testid={testId}
+    <BlockWrapper
+      componentId={componentId}
+      testId={testId}
       className={`wdrlscw-videos${className ? ` ${className}` : ''}`}
+      {...props}
     >
       <Container containerClass={container}>
         {heading && (
@@ -33,7 +37,11 @@ export const Videos = ({
 
         <Grid gap={gap} columns={columns}>
           {items.map((item, index) => (
-            <VideoBlock key={item.url + index} {...item} />
+            <VideoBlock
+              key={item.url + index}
+              {...item}
+              boxRadius={boxRadius}
+            />
           ))}
         </Grid>
         {button && (
@@ -45,6 +53,6 @@ export const Videos = ({
           </>
         )}
       </Container>
-    </section>
+    </BlockWrapper>
   )
 }

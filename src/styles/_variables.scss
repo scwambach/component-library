@@ -37,6 +37,7 @@
   --color-primary: #{$blue};
   --color-primary-light: #{$lightBlue};
   --color-primary-dark: #{darken($blue, 10%)};
+  --color-primary-overlay: rgba($blue, 0.8);
   --color-secondary: #{$green};
   --color-secondary-light: #{$lightGreen};
   --color-secondary-dark: #{darken($green, 10%)};
@@ -52,7 +53,14 @@
   --color-gray: #{$gray};
   --color-gray-light: #{$lightGray};
 
-  --overlay-primary: rgba(18, 101, 124, 0.8);
+  --overlay-primary: rgba(#{$blue}, 0.5);
+  --overlay-secondary: rgba(#{$green}, 0.5);
+  --overlay-tertiary: rgba(#{$orange}, 0.5);
+  --overlay-quaternary: rgba(#{$red}, 0.5);
+  --overlay-white: rgba(#{$white}, 0.5);
+  --overlay-black: rgba(#{$black}, 0.5);
+  --overlay-offwhite: rgba(#{$eggShell}, 0.5);
+  --overlay-gray: rgba(#{$gray}, 0.5);
 
   --color-error: #{$error};
   --color-success: #{$success};

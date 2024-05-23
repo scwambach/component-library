@@ -1,5 +1,5 @@
 import { ImageObject } from '../modules'
-import { Flex } from '../utility'
+import { Box, Flex } from '../utility'
 import { LogoRowProps } from '../../utils/types'
 
 // TODO: Create LogoRow tests and stories
@@ -11,10 +11,11 @@ export const LogoRow = ({
   testId,
 }: LogoRowProps) => {
   return (
-    <div
-      id={componentId}
-      data-testid={testId}
+    <Box
+      componentId={componentId}
+      testId={testId}
       className={`wdrlscw-logoRow${className ? ` ${className}` : ''}`}
+      elementTag="section"
     >
       <Flex justifyContent="center" alignItems="center" gap="xl">
         {items.map((item) => {
@@ -26,6 +27,6 @@ export const LogoRow = ({
           )
         })}
       </Flex>
-    </div>
+    </Box>
   )
 }

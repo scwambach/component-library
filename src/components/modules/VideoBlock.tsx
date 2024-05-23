@@ -13,6 +13,7 @@ export const VideoBlock = ({
   poster,
   testId,
   markdown,
+  boxRadius,
   title,
   url,
 }: VideoBlockProps) => {
@@ -34,7 +35,7 @@ export const VideoBlock = ({
       className={`wdrlscw-videoBlock${className ? ` ${className}` : ''}`}
       testId={testId}
     >
-      <Box>
+      <Box radius={boxRadius} overflow>
         {hasWindow && (
           <ReactPlayer
             url={url}

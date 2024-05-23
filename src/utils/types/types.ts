@@ -10,9 +10,13 @@ export type BreakNames =
 
 export type Colors =
   | 'primary'
+  | 'primary-light'
   | 'secondary'
+  | 'secondary-light'
   | 'tertiary'
+  | 'tertiary-light'
   | 'quaternary'
+  | 'quaternary-light'
   | 'black'
   | 'white'
 

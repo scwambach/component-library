@@ -4,6 +4,7 @@ import { SectionHeading } from '../modules/SectionHeading'
 import { Container, Grid } from '../utility'
 import { GalleryProps } from '../../utils/types'
 import { useEffect, useState } from 'react'
+import { BlockWrapper } from '@components/utility/BlockWrapper'
 
 export const Gallery = ({
   className,
@@ -16,6 +17,7 @@ export const Gallery = ({
   headingLevel,
   subheading,
   testId,
+  ...props
 }: GalleryProps) => {
   const [activeIndex, setActiveIndex] = useState<number>(0)
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
@@ -28,10 +30,11 @@ export const Gallery = ({
   }, [activeIndex])
 
   return (
-    <section
-      id={componentId}
-      data-testid={testId}
+    <BlockWrapper
+      componentId={componentId}
+      testId={testId}
       className={`wdrlscw-gallery${className ? ` ${className}` : ''}`}
+      {...props}
     >
       <Container containerClass={container}>
         {heading && (
@@ -67,6 +70,6 @@ export const Gallery = ({
           controls
         />
       </Container>
-    </section>
+    </BlockWrapper>
   )
 }

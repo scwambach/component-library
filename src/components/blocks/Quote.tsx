@@ -1,5 +1,5 @@
 import { Avatar } from '../modules'
-import { Container, Flex, Markdown } from '../utility'
+import { Box, Container, Flex, Markdown } from '../utility'
 import { Minus, Quotes } from '@phosphor-icons/react/dist/ssr'
 import { QuoteProps } from '../../utils/types'
 
@@ -15,9 +15,10 @@ export const Quote = (props: QuoteProps) => {
     markdown,
   } = props
   return (
-    <section
-      id={componentId}
-      data-testid={testId}
+    <Box
+      componentId={componentId}
+      testId={testId}
+      elementTag="section"
       className={`wdrlscw-quote ${bgColor}${className ? ` ${className}` : ''}`}
     >
       <Container containerClass="narrower">
@@ -54,6 +55,6 @@ export const Quote = (props: QuoteProps) => {
           </Flex>
         )}
       </Container>
-    </section>
+    </Box>
   )
 }

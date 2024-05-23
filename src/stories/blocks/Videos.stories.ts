@@ -14,6 +14,7 @@ export const Videos: Story = {
   args: {
     heading: 'Videos',
     subheading: 'Check out our latest videos',
+    boxRadius: 12,
     items: [
       {
         url: 'https://www.youtube.com/embed/7e90gBu4pas',

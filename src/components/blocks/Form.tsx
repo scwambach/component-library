@@ -2,6 +2,7 @@ import { Button } from '../modules'
 import { SectionHeading } from '../modules/SectionHeading'
 import { Container } from '../utility'
 import { FormProps } from '../../utils/types'
+import { BlockWrapper } from '@components/utility/BlockWrapper'
 
 const Form = ({
   children,
@@ -15,12 +16,14 @@ const Form = ({
   subheading,
   submitCopy,
   testId,
+  ...props
 }: FormProps) => {
   return (
-    <section
-      id={componentId}
+    <BlockWrapper
+      componentId={componentId}
       className={`wdrlscw-form${className ? ` ${className}` : ''}`}
-      data-testid={testId}
+      testId={testId}
+      {...props}
     >
       <Container containerClass={container}>
         {heading && (
@@ -41,7 +44,7 @@ const Form = ({
           <Button type="submit">{submitCopy || 'Submit'}</Button>
         </form>
       </Container>
-    </section>
+    </BlockWrapper>
   )
 }
 

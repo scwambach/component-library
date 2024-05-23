@@ -13,7 +13,7 @@ export const Banner = ({
   className,
   componentId,
   contained,
-  containedWidth = 'narrow',
+  container: containedWidth = 'narrow',
   crumbs,
   date,
   foregroundMedia,
@@ -124,14 +124,15 @@ export const Banner = ({
   )
 
   return (
-    <section
-      id={componentId}
+    <Box
+      componentId={componentId}
       className={`wdrlscw-banner ${bgColor}${contained && overlap ? ' overlap' : ''}${
         contained ? ' contained' : ''
       }${className ? ` ${className}` : ''}${
         backgroundImage ? ' has-image' : ''
       }${contained && micro ? ' micro' : ''}`}
-      data-testid={testId}
+      testId={testId}
+      elementTag="section"
       style={style}
     >
       {!contained && backgroundImage && (
@@ -164,6 +165,6 @@ export const Banner = ({
           )}
         </div>
       </Container>
-    </section>
+    </Box>
   )
 }

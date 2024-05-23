@@ -7,6 +7,7 @@ import { CaretLeft, CaretRight } from '@phosphor-icons/react'
 import { CardsProps } from '../../utils/types'
 import { useEffect, useState } from 'react'
 import ReactPaginate from 'react-paginate'
+import { BlockWrapper } from '@components/utility/BlockWrapper'
 
 export const Cards = ({
   button,
@@ -22,6 +23,7 @@ export const Cards = ({
   paginated,
   subheading,
   testId,
+  ...props
 }: CardsProps) => {
   const [itemOffset, setItemOffset] = useState(0)
   const [activePage, setActivePage] = useState(1)
@@ -67,10 +69,11 @@ export const Cards = ({
   }, [itemOffset])
 
   return (
-    <section
-      id={componentId}
-      data-testid={testId}
+    <BlockWrapper
+      componentId={componentId}
+      testId={testId}
       className={`wdrlscw-cards${className ? ` ${className}` : ''}`}
+      {...props}
     >
       <Container containerClass={container}>
         {heading && (
@@ -141,6 +144,6 @@ export const Cards = ({
           </nav>
         )}
       </Container>
-    </section>
+    </BlockWrapper>
   )
 }

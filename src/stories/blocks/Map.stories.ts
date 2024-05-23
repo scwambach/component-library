@@ -14,6 +14,7 @@ type Story = StoryObj<typeof MapItem>
 export const Map: Story = {
   args: {
     mapStyle,
+    googleMapsApiKey: 'AIzaSyCWdtdxYMqxuFjeCYJ9Fe1mAIL3KdPybg8',
     markers: [
       {
         lat: 37.963211,

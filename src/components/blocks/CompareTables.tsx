@@ -1,6 +1,7 @@
 import { CompareTable, SectionHeading } from '../modules'
 import { Container, Flex } from '../utility'
 import { CompareTablesProps } from '../../utils/types'
+import { BlockWrapper } from '@components/utility/BlockWrapper'
 
 // TODO: Create CompareTables tests and stories
 
@@ -13,12 +14,14 @@ export const CompareTables = ({
   headingLevel,
   items,
   overallTheme,
+  ...props
 }: CompareTablesProps) => {
   return (
-    <div
-      id={componentId}
-      data-testid={testId}
+    <BlockWrapper
+      componentId={componentId}
+      testId={testId}
       className={`wdrlscw-compareTables${className ? ` ${className}` : ''}`}
+      {...props}
     >
       <Container containerClass="narrow">
         {heading && (
@@ -44,6 +47,6 @@ export const CompareTables = ({
           ))}
         </Flex>
       </Container>
-    </div>
+    </BlockWrapper>
   )
 }

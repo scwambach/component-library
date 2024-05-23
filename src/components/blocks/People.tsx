@@ -2,6 +2,7 @@ import { Person } from '../modules'
 import { SectionHeading } from '../modules/SectionHeading'
 import { Container, Grid } from '../utility'
 import { PeopleProps } from '../../utils/types'
+import { BlockWrapper } from '@components/utility/BlockWrapper'
 
 export const People = ({
   className,
@@ -14,16 +15,18 @@ export const People = ({
   headingLevel = 3,
   subheading,
   testId,
+  ...props
 }: PeopleProps) => {
   const renderedPeople = items.map((item, index) => {
     return <Person key={index} {...item} />
   })
 
   return (
-    <section
-      id={componentId}
-      data-testid={testId}
+    <BlockWrapper
+      componentId={componentId}
+      testId={testId}
       className={`wdrlscw-people${className ? ` ${className}` : ''}`}
+      {...props}
     >
       <Container containerClass={container}>
         {heading && (
@@ -37,6 +40,6 @@ export const People = ({
           {renderedPeople}
         </Grid>
       </Container>
-    </section>
+    </BlockWrapper>
   )
 }

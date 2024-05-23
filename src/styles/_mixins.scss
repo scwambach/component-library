@@ -9,6 +9,14 @@
 @mixin vertical-spacing-margin {
   margin: var(--vertical-spacing) 0;
 
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @media screen and (max-width: ($md - 1)) {
     margin: var(--vertical-spacing-mobile) 0;
   }

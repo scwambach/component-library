@@ -1,6 +1,4 @@
 .wdrlscw-river {
-  @include vertical-spacing-margin;
-
   > .wdrlscw-flex {
     @media screen and (max-width: ($md - 1)) {
       flex-direction: column;

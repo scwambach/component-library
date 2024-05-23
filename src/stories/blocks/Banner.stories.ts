@@ -247,7 +247,7 @@ export const CalloutBox: Story = {
     bgColor: 'secondary',
     boxBgColor: 'black',
     contained: true,
-    containedWidth: 'narrower',
+    container: 'narrower',
     micro: true,
     heading: 'Quisque iaculis tincidunt',
     message:

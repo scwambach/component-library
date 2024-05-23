@@ -19,6 +19,7 @@
 
   &.primary {
     background-color: var(--color-primary-light);
+    color: var(--color-black);
 
     &.highlight {
       background: var(--color-primary);
@@ -27,16 +28,29 @@
   }
   &.secondary {
     background-color: var(--color-secondary-light);
+    color: var(--color-black);
 
     &.highlight {
       background: var(--color-secondary);
+      color: var(--color-white);
     }
   }
   &.tertiary {
     background-color: var(--color-tertiary-light);
+    color: var(--color-black);
 
     &.highlight {
       background: var(--color-tertiary);
+    }
+  }
+
+  &.quaternary {
+    background-color: var(--color-quaternary-light);
+    color: var(--color-black);
+
+    &.highlight {
+      background: var(--color-quaternary);
+      color: var(--color-white);
     }
   }
 }

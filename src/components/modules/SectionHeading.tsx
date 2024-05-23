@@ -7,7 +7,7 @@ export const SectionHeading = ({
   heading,
   headingLevel = 3,
   subheading,
-  markdown,
+  markdown = true,
   testId,
 }: SectionHeadingProps) => {
   return (

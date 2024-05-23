@@ -7,7 +7,7 @@ export const Box = ({
   shadow,
   overflow,
   componentId,
-  radius = 8,
+  radius,
   style,
   elementTag = 'div',
 }: BoxProps) => {

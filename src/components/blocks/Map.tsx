@@ -7,7 +7,7 @@ import {
   useLoadScript,
 } from '@react-google-maps/api'
 import { useCallback, useRef } from 'react'
-import { Flex, Heading, Spinner } from '../utility'
+import { Box, Flex, Heading, Spinner } from '../utility'
 
 const libraries = ['places'] as Libraries
 
@@ -16,6 +16,7 @@ export const Map = ({
   componentId,
   mapStyle,
   markers,
+  googleMapsApiKey = '',
   style = {
     width: '100%',
     minHeight: '600px',
@@ -23,7 +24,7 @@ export const Map = ({
   testId,
 }: MapProps) => {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: process.env.GOOGLE_MAP_API_KEY as string,
+    googleMapsApiKey,
     libraries,
   })
 
@@ -69,10 +70,11 @@ export const Map = ({
     )
 
   return (
-    <section
-      id={componentId}
-      data-testid={testId}
+    <Box
+      componentId={componentId}
+      testId={testId}
       style={style}
+      elementTag="section"
       className={`wdrlscw-map${className ? ` ${className}` : ''}`}
     >
       <GoogleMap
@@ -90,6 +92,6 @@ export const Map = ({
         ))}
         map
       </GoogleMap>
-    </section>
+    </Box>
   )
 }

@@ -1,5 +1,5 @@
 import { ImageObject } from '../modules'
-import { Flex } from '../utility'
+import { Box, Flex } from '../utility'
 import { LogoBannerProps } from '../../utils/types'
 
 // TODO: Create LogoBanner tests and stories
@@ -12,9 +12,10 @@ export const LogoBanner = ({
   testId,
 }: LogoBannerProps) => {
   return (
-    <section
-      id={componentId}
-      data-testid={testId}
+    <Box
+      componentId={componentId}
+      elementTag="section"
+      testId={testId}
       className={`wdrlscw-logoBanner${className ? ` ${className}` : ''}`}
     >
       <ImageObject {...backgroundImage} alt="" isBackground />
@@ -23,6 +24,6 @@ export const LogoBanner = ({
           <ImageObject {...logo} alt="Logo" className="logo" />
         </Flex>
       )}
-    </section>
+    </Box>
   )
 }

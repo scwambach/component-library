@@ -240,6 +240,7 @@ export interface VideoBlockProps extends ComponentProps {
   copy?: string | any[]
   markdown?: boolean
   poster?: ImageObjectProps
+  boxRadius?: 4 | 8 | 12
   title?: string
   url: string
 }

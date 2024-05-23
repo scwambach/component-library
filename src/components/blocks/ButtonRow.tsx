@@ -1,8 +1,9 @@
 import { Button, SectionHeading } from '../modules'
 import { Container, Flex } from '../utility'
 import { ButtonRowProps } from '../../utils/types'
+import { BlockWrapper } from '@components/utility/BlockWrapper'
 
-// TODO: Create ButtonRow tests and stories
+// TODO: Create ButtonRow tests
 
 export const ButtonRow = ({
   className,
@@ -12,12 +13,14 @@ export const ButtonRow = ({
   headingLevel,
   subheading,
   testId,
+  ...props
 }: ButtonRowProps) => {
   return (
-    <div
-      id={componentId}
-      data-testid={testId}
+    <BlockWrapper
+      componentId={componentId}
+      testId={testId}
       className={`wdrlscw-buttonRow${className ? ` ${className}` : ''}`}
+      {...props}
     >
       <Container>
         {heading && (
@@ -33,6 +36,6 @@ export const ButtonRow = ({
           ))}
         </Flex>
       </Container>
-    </div>
+    </BlockWrapper>
   )
 }
