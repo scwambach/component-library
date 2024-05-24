@@ -10,6 +10,7 @@ export const Banner = ({
   backgroundImage,
   bgColor = 'primary',
   boxBgColor = 'white',
+  boxRadius,
   className,
   componentId,
   contained,
@@ -144,7 +145,9 @@ export const Banner = ({
         />
       )}
       <Container containerClass={contained ? containedWidth : undefined}>
-        <div
+        <Box
+          radius={contained ? boxRadius : undefined}
+          overflow={contained}
           className={`inner${contained && boxBgColor && !backgroundImage ? ` ${boxBgColor}` : ''}`}
         >
           {contained && backgroundImage && (
@@ -163,7 +166,7 @@ export const Banner = ({
           ) : (
             content(true)
           )}
-        </div>
+        </Box>
       </Container>
     </Box>
   )

@@ -6,8 +6,11 @@
       &.galleryItem {
         display: block;
         position: relative;
-        height: $size-156;
-        @include radius8overflow;
+
+        .wdrlscw-box {
+          position: relative;
+          height: $size-156;
+        }
       }
     }
   }

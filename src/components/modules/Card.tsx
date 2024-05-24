@@ -17,6 +17,7 @@ export const Card = ({
   links,
   markdown,
   tags,
+  boxRadius,
   testId,
   title,
 }: CardProps) => {
@@ -24,6 +25,7 @@ export const Card = ({
     <Box
       componentId={componentId}
       testId={testId}
+      radius={boxRadius}
       className={`wdrlscw-card${href ? ' link' : ''}${className ? ` ${className}` : ''}`}
     >
       {tags && (

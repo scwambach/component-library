@@ -95,7 +95,6 @@
   --heading-four-size: #{$size-24};
   --heading-five-size: #{$size-20};
   --heading-six-size: #{$size-18};
-
   --heading-margin: #{$size-24} 0;
 
   --body-margin: #{$size-8} 0;
@@ -105,6 +104,9 @@
   --border-radius-small: #{$size-4};
   --border-radius-medium: #{$size-8};
   --border-radius-large: #{$size-12};
+
+  --border-radius-buttons: #{$size-4};
+  --border-radius-input: #{$size-4};
 
   --color-focus-outline: #{$red};
   --color-focus-outline-secondary: #{$blue};

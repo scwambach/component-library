@@ -18,6 +18,7 @@ export const River = ({
   items,
   reverse,
   testId,
+  boxRadius,
   markdown,
   bgColor,
   theme = 'primary',
@@ -43,7 +44,11 @@ export const River = ({
                   alignItems={item.video ? 'center' : 'stretch'}
                   key={item._key}
                 >
-                  <Box overflow className={item.video ? 'video' : 'image'}>
+                  <Box
+                    overflow
+                    className={item.video ? 'video' : 'image'}
+                    radius={boxRadius}
+                  >
                     {item.video ? (
                       <VideoBlock url={item.video.url} poster={item.image} />
                     ) : (

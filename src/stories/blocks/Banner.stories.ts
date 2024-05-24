@@ -223,6 +223,7 @@ export const Contained: Story = {
     markdown: true,
     bgColor: 'primary',
     contained: true,
+    boxRadius: 12,
     heading: 'Quisque iaculis tincidunt',
     links: [
       {
@@ -244,6 +245,7 @@ export const Contained: Story = {
 export const CalloutBox: Story = {
   args: {
     markdown: true,
+    boxRadius: 12,
     bgColor: 'secondary',
     boxBgColor: 'black',
     contained: true,

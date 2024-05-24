@@ -9,6 +9,7 @@ import {
   Elements,
   FieldTypes,
   HeadingLevel,
+  Radius,
   Themes,
 } from './types'
 import { CompareTableProps, MapMarker } from './blocks'
@@ -72,6 +73,7 @@ export interface CardProps extends ComponentProps {
   authors?: PersonProps[]
   icon?: keyof typeof Icon
   date?: string
+  boxRadius?: Radius
   description?: string
   markdown?: boolean
   theme?: Themes
@@ -240,7 +242,7 @@ export interface VideoBlockProps extends ComponentProps {
   copy?: string | any[]
   markdown?: boolean
   poster?: ImageObjectProps
-  boxRadius?: 4 | 8 | 12
+  boxRadius?: Radius
   title?: string
   url: string
 }

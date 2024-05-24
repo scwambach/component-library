@@ -10,6 +10,7 @@ import ReactPaginate from 'react-paginate'
 import { BlockWrapper } from '../utility'
 
 export const Cards = ({
+  boxRadius,
   button,
   className,
   columns,
@@ -17,9 +18,9 @@ export const Cards = ({
   container,
   gap = 'xs',
   heading,
+  headingLevel = 3,
   items,
   itemsPerPage = 6,
-  headingLevel = 3,
   paginated,
   subheading,
   testId,
@@ -43,7 +44,7 @@ export const Cards = ({
 
   const renderedCards = (paginated ? currentItems : items).map(
     (item, index) => {
-      return <Card key={index} {...item} />
+      return <Card key={index} {...item} boxRadius={boxRadius} />
     }
   )
 

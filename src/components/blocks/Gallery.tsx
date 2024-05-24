@@ -1,19 +1,20 @@
 'use client'
 import { Button, ImageObject, GalleryModal } from '../modules'
 import { SectionHeading } from '../modules/SectionHeading'
-import { BlockWrapper, Container, Grid } from '../utility'
+import { BlockWrapper, Box, Container, Grid } from '../utility'
 import { GalleryProps } from '../../utils/types'
 import { useEffect, useState } from 'react'
 
 export const Gallery = ({
+  boxRadius,
   className,
   columns = 4,
   componentId,
   container,
   gap,
   heading,
-  items,
   headingLevel,
+  items,
   subheading,
   testId,
   ...props
@@ -56,7 +57,9 @@ export const Gallery = ({
                 setActiveIndex(items.indexOf(item))
               }}
             >
-              <ImageObject {...item} isBackground width={400} height={400} />
+              <Box overflow radius={boxRadius}>
+                <ImageObject {...item} isBackground width={400} height={400} />
+              </Box>
             </Button>
           ))}
         </Grid>

@@ -13,6 +13,7 @@ type Story = StoryObj<typeof GalleryItem>
 export const Gallery: Story = {
   args: {
     gap: 'xs',
+    boxRadius: 8,
     columns: 4,
     heading: 'Gallery',
     subheading:

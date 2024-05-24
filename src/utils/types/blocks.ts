@@ -20,6 +20,7 @@ import {
   Elements,
   Gaps,
   HeadingLevel,
+  Radius,
   Themes,
 } from './types'
 
@@ -33,6 +34,7 @@ export interface BannerProps extends BlockProps {
   markdown?: boolean
   boxBgColor?: Colors
   contained?: boolean
+  boxRadius?: Radius
   crumbs?: {
     current?: string
     items?: BreadcrumbsProps['crumbs']
@@ -55,6 +57,7 @@ export interface CardsProps extends BlockProps {
   items: CardProps[]
   gap?: Gaps
   columns?: ColumnSize
+  boxRadius?: Radius
   paginated?: boolean
   itemsPerPage?: number
   button?: ButtonProps
@@ -96,6 +99,7 @@ export interface FormSelectorProps extends BlockProps {
 export interface GalleryProps extends BlockProps {
   items: ImageObjectProps[]
   gap?: Gaps
+  boxRadius?: Radius
   columns?: ColumnSize
 }
 
@@ -158,6 +162,7 @@ export interface RiverProps extends ComponentProps {
   headingLevel?: HeadingLevel
   markdown?: boolean
   reverse?: boolean
+  boxRadius?: Radius
   container?: ContainerClasses
   items: {
     _key: string
@@ -195,7 +200,7 @@ export interface TimelineProps extends BlockProps {
 export interface VideosProps extends BlockProps {
   items: VideoBlockProps[]
   columns?: ColumnSize
-  boxRadius?: 4 | 8 | 12
+  boxRadius?: Radius
   gap?: Gaps
   button?: ButtonProps
 }

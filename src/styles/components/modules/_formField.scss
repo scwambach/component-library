@@ -2,7 +2,7 @@
   input,
   textarea,
   select {
-    @include radius4;
+    border-radius: var(--border-radius-input);
     appearance: none;
     font-size: $size-16;
     box-shadow: none;

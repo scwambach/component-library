@@ -33,7 +33,6 @@
     .inner {
       position: relative;
       overflow: hidden;
-      @include radius12;
       padding: $size-120;
       box-shadow: $box-shadow-4;
 

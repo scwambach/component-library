@@ -1,5 +1,5 @@
 .wdrlscw-button {
-  @include radius4;
+  border-radius: var(--border-radius-buttons);
   align-items: center;
   appearance: none;
   background: var(--color-primary);

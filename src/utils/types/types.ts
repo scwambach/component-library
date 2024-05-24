@@ -102,3 +102,5 @@ export type Elements =
   | 'h4'
   | 'h5'
   | 'h6'
+
+export type Radius = 4 | 8 | 12

@@ -7,6 +7,7 @@ import {
   ContainerClasses,
   Elements,
   HeadingLevel,
+  Radius,
   Themes,
 } from './types'
 import { ButtonProps } from './modules'
@@ -14,7 +15,7 @@ import { ButtonProps } from './modules'
 export interface BoxProps extends ComponentProps {
   children: ReactNode
   elementTag?: keyof JSX.IntrinsicElements
-  radius?: 4 | 8 | 12
+  radius?: Radius
   overflow?: boolean
   shadow?: 1 | 2 | 3 | 4
   style?: CSSProperties
