@@ -53,14 +53,14 @@
   --color-gray: #{$gray};
   --color-gray-light: #{$lightGray};
 
-  --overlay-primary: rgba(#{$blue}, 0.5);
-  --overlay-secondary: rgba(#{$green}, 0.5);
-  --overlay-tertiary: rgba(#{$orange}, 0.5);
-  --overlay-quaternary: rgba(#{$red}, 0.5);
-  --overlay-white: rgba(#{$white}, 0.5);
-  --overlay-black: rgba(#{$black}, 0.5);
-  --overlay-offwhite: rgba(#{$eggShell}, 0.5);
-  --overlay-gray: rgba(#{$gray}, 0.5);
+  --overlay-primary: #{rgba($blue, 0.5)};
+  --overlay-secondary: #{rgba($green, 0.5)};
+  --overlay-tertiary: #{rgba($orange, 0.5)};
+  --overlay-quaternary: #{rgba($red, 0.5)};
+  --overlay-white: #{rgba($white, 0.5)};
+  --overlay-black: #{rgba($black, 0.5)};
+  --overlay-offwhite: #{rgba($eggShell, 0.5)};
+  --overlay-gray: #{rgba($gray, 0.5)};
 
   --color-error: #{$error};
   --color-success: #{$success};
