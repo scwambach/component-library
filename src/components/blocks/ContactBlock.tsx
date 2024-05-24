@@ -1,6 +1,6 @@
 'use client'
 import { LinkObject, SectionHeading } from '../modules'
-import { Container, Flex, Heading } from '../utility'
+import { Box, Container, Flex, Heading } from '../utility'
 import { ContactBlockProps } from '../../utils/types'
 import { Map } from './Map'
 
@@ -13,9 +13,11 @@ export const ContactBlock = (props: ContactBlockProps) => {
     componentId,
     heading,
     subheading,
+    googleMapsApiKey,
     marker,
     headingLevel,
     information,
+    boxRadius,
     container,
     mapStyle,
   } = props
@@ -82,7 +84,15 @@ export const ContactBlock = (props: ContactBlockProps) => {
               </Flex>
             </div>
           )}
-          {marker && <Map markers={[marker]} mapStyle={mapStyle} />}
+          {marker && (
+            <Box overflow radius={boxRadius}>
+              <Map
+                markers={[marker]}
+                mapStyle={mapStyle}
+                googleMapsApiKey={googleMapsApiKey}
+              />
+            </Box>
+          )}
         </Flex>
       </Container>
     </section>

@@ -12,6 +12,7 @@ type Story = StoryObj<typeof EventsItem>
 
 export const Events: Story = {
   args: {
+    boxRadius: 4,
     items: [
       {
         date: '2024-02-29',

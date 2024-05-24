@@ -13,6 +13,7 @@ type Story = StoryObj<typeof CompareTablesItem>
 export const Primary: Story = {
   args: {
     heading: 'Compare Tables',
+    boxRadius: 8,
     headingLevel: 2,
     overallTheme: 'primary',
     subheading: 'A row of tables',
@@ -86,6 +87,7 @@ export const Secondary: Story = {
     heading: 'Compare Tables',
     headingLevel: 2,
     overallTheme: 'secondary',
+    boxRadius: 8,
     subheading: 'A row of tables',
     items: [
       {
@@ -155,6 +157,7 @@ export const Secondary: Story = {
 export const Tertiary: Story = {
   args: {
     heading: 'Compare Tables',
+    boxRadius: 8,
     headingLevel: 2,
     overallTheme: 'tertiary',
     subheading: 'A row of tables',

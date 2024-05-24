@@ -85,12 +85,15 @@ export interface CardProps extends ComponentProps {
 export interface CompareTablesProps extends BlockProps {
   items: CompareTableProps[]
   overallTheme?: Themes
+  boxRadius?: Radius
 }
 
 export interface ContactBlockProps extends BlockProps {
   marker?: MapMarker
   mapStyle?: any
+  boxRadius?: Radius
   information: ContactInfoProps
+  googleMapsApiKey: string
   container?: ContainerClasses
 }
 
@@ -107,6 +110,7 @@ export interface DropdownProps extends ButtonProps {
 export interface EventProps extends ComponentProps {
   title: string
   date: string
+  boxRadius?: Radius
   poster?: ImageObjectProps
   location?: {
     name: string
@@ -182,6 +186,7 @@ export interface LinkObjectProps extends ComponentProps {
 export interface PersonProps extends ComponentProps {
   firstName: string
   lastName: string
+  boxRadius?: Radius
   title?: string
   href?: string
   image: ImageObjectProps
@@ -211,6 +216,7 @@ export interface StatProps extends ComponentProps {
   icon?: keyof typeof Icon
   type?: 'currency' | 'percentage' | 'number'
   numberPrefix?: string
+  boxRadius?: Radius
   numberSuffix?: string
   subtitle?: string
   theme?: Themes

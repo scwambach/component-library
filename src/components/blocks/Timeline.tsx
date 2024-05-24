@@ -2,8 +2,10 @@ import { ImageObject, SectionHeading } from '../modules'
 import { Box, Container, Flex, Markdown, Portable } from '../utility'
 import { TimelineProps } from '../../utils/types'
 import dayjs from 'dayjs'
+import { Radius } from '@utils/types/types'
 
 export const Timeline = ({
+  boxRadius,
   className,
   componentId,
   container,
@@ -14,10 +16,13 @@ export const Timeline = ({
   testId,
   markdown,
 }: TimelineProps) => {
+  const rounded =
+    boxRadius === 4 ? boxRadius : boxRadius ? boxRadius - 4 : undefined
   return (
-    <section
-      id={componentId}
-      data-testid={testId}
+    <Box
+      elementTag="section"
+      componentId={componentId}
+      testId={testId}
       className={`wdrlscw-timeline${className ? ` ${className}` : ''}`}
     >
       <Container containerClass={container}>
@@ -28,36 +33,38 @@ export const Timeline = ({
             subheading={subheading}
           />
         )}
-        <div className="eventItems">
+        <Box className="eventItems">
           {events.map((event) => (
-            <div key={event.date} className="eventItem">
-              <Flex className="inner" direction="column" gap="xxs">
-                <div className="info">
-                  <p className="year">{dayjs(event.date).format('YYYY')}</p>
-                  <p className="date">
-                    <span>{dayjs(event.date).format('MMM DD, YYYY')}</span>
-                  </p>
-                  <p className={`title `}>{event.title}</p>
-                  {event.description && (
-                    <div className="description">
-                      {markdown ? (
-                        <Markdown>{event.description as string}</Markdown>
-                      ) : (
-                        <Portable content={event.description as any[]} />
-                      )}
-                    </div>
-                  )}
-                </div>
-                {event.image && (
-                  <Box overflow>
-                    <ImageObject {...event.image} />
+            <Box key={event.date} className="eventItem">
+              <Box radius={boxRadius} className="inner">
+                <Flex direction="column" gap="xxs">
+                  <Box className="info">
+                    <p className="year">{dayjs(event.date).format('YYYY')}</p>
+                    <p className="date">
+                      <span>{dayjs(event.date).format('MMM DD, YYYY')}</span>
+                    </p>
+                    <p className={`title `}>{event.title}</p>
+                    {event.description && (
+                      <div className="description">
+                        {markdown ? (
+                          <Markdown>{event.description as string}</Markdown>
+                        ) : (
+                          <Portable content={event.description as any[]} />
+                        )}
+                      </div>
+                    )}
                   </Box>
-                )}
-              </Flex>
-            </div>
+                  {event.image && (
+                    <Box overflow radius={rounded as Radius}>
+                      <ImageObject {...event.image} />
+                    </Box>
+                  )}
+                </Flex>
+              </Box>
+            </Box>
           ))}
-        </div>
+        </Box>
       </Container>
-    </section>
+    </Box>
   )
 }

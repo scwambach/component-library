@@ -14,6 +14,7 @@ export const People: Story = {
   args: {
     columns: 4,
     gap: 'xs',
+    boxRadius: 8,
     items: [
       {
         firstName: 'John',

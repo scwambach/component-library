@@ -7,6 +7,7 @@ import { Tag } from './Tag'
 // TODO: Create CompareTable tests and stories
 
 export const CompareTable = ({
+  boxRadius,
   className,
   componentId,
   eyebrow,
@@ -15,8 +16,8 @@ export const CompareTable = ({
   items,
   link,
   subheading,
-  testId,
   tag,
+  testId,
   theme = 'primary',
 }: CompareTableProps) => {
   const accent =
@@ -30,7 +31,7 @@ export const CompareTable = ({
 
   return (
     <Box
-      radius={8}
+      radius={boxRadius}
       componentId={componentId}
       data-testid={testId}
       className={`wdrlscw-compareTable ${theme}${className ? ` ${className}` : ''}${

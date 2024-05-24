@@ -15,6 +15,7 @@ export const Event = ({
   links,
   location,
   poster,
+  boxRadius,
   startTime,
   testId,
   title,
@@ -60,6 +61,7 @@ export const Event = ({
     <Box
       componentId={componentId}
       testId={testId}
+      radius={boxRadius}
       className={`wdrlscw-event${className ? ` ${className}` : ''}`}
     >
       <Flex
@@ -72,7 +74,7 @@ export const Event = ({
           gap={poster ? 'xxs' : 'sm'}
           className="details"
         >
-          <Box radius={4} className="date">
+          <Box radius={boxRadius} className="date">
             <span>{dayjs(date).format('MMM')}</span>
             <Heading level={3} nonHeadingElement="p">
               {dayjs(date).format('DD')}
@@ -81,7 +83,7 @@ export const Event = ({
           </Box>
           <Flex gap="xxs" alignItems="stretch" fill className="info">
             {poster && (
-              <Box overflow className="poster">
+              <Box overflow className="poster" radius={boxRadius}>
                 <Button
                   unstyled
                   style={{

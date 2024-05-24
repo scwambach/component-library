@@ -13,6 +13,7 @@ type Story = StoryObj<typeof StatsItem>
 export const Stats: Story = {
   args: {
     heading: 'Stats',
+    boxRadius: 12,
     subheading: 'This is a subheading',
     items: [
       {

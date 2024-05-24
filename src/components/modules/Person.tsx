@@ -4,6 +4,7 @@ import { IconSelector, Flex, Box } from '../utility'
 import { LinkObject, ImageObject } from '../modules'
 
 export const Person = ({
+  boxRadius,
   className,
   company,
   componentId,
@@ -21,7 +22,7 @@ export const Person = ({
       className={`wdrlscw-person${className ? ` ${className}` : ''}`}
     >
       <Flex direction="column" gap="xxs" alignItems="stretch">
-        <Box overflow className="image">
+        <Box overflow className="image" radius={boxRadius}>
           <ImageObject {...image} isBackground />
         </Box>
         <p>

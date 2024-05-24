@@ -13,6 +13,7 @@ type Story = StoryObj<typeof TimelineItem>
 export const Timeline: Story = {
   args: {
     markdown: true,
+    boxRadius: 12,
     events: [
       {
         date: '2019-01-01',

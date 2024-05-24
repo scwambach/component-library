@@ -7,6 +7,7 @@ import { TabsProps } from '../../utils/types'
 import { useState } from 'react'
 
 export const Tabs = ({
+  boxRadius,
   className,
   componentId,
   container,
@@ -20,9 +21,10 @@ export const Tabs = ({
   const [activeTab, setActiveTab] = useState(0)
   const [menuOpen, setMenuOpen] = useState(false)
   return (
-    <section
-      id={componentId}
-      data-testid={testId}
+    <Box
+      elementTag="section"
+      componentId={componentId}
+      testId={testId}
       className={`wdrlscw-tabs${className ? ` ${className}` : ''}`}
     >
       <Container containerClass={container}>
@@ -76,10 +78,10 @@ export const Tabs = ({
             </li>
           ))}
         </Flex>
-        <Box shadow={2} className="panel">
+        <Box shadow={2} className="panel" radius={boxRadius}>
           {items[activeTab].content}
         </Box>
       </Container>
-    </section>
+    </Box>
   )
 }

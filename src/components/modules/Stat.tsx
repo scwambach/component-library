@@ -5,6 +5,7 @@ import { toUsCurrency } from '../../utils/toUsCurrency'
 import { StatProps } from '../../utils/types'
 
 export const Stat = ({
+  boxRadius,
   className,
   componentId,
   decimals,
@@ -40,6 +41,7 @@ export const Stat = ({
       shadow={2}
       className={`wdrlscw-stat ${theme}${className ? ` ${className}` : ''}`}
       testId={testId}
+      radius={boxRadius}
     >
       <Flex columnBreak="xxs" gap="xs">
         {icon && (

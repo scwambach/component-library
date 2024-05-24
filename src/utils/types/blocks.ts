@@ -73,6 +73,7 @@ export interface CompareTableProps extends ComponentProps {
   highlight?: boolean
   items: string[]
   link?: ButtonProps
+  boxRadius?: Radius
   subheading?: string
   tag?: string
   theme?: Themes
@@ -80,6 +81,7 @@ export interface CompareTableProps extends ComponentProps {
 
 export interface EventsProps extends BlockProps {
   items: EventProps[]
+  boxRadius?: Radius
 }
 
 export interface FormProps extends BlockProps {
@@ -132,6 +134,7 @@ export interface PeopleProps extends BlockProps {
   items: PersonProps[]
   columns?: ColumnSize
   gap?: Gaps
+  boxRadius?: Radius
 }
 
 export interface QuoteProps extends ComponentProps {
@@ -177,9 +180,11 @@ export interface RiverProps extends ComponentProps {
 export interface StatsProps extends BlockProps {
   items: StatProps[]
   gap?: Gaps
+  boxRadius?: Radius
 }
 
 export interface TabsProps extends BlockProps {
+  boxRadius?: Radius
   items: {
     label: string
     content: React.ReactNode
@@ -188,6 +193,7 @@ export interface TabsProps extends BlockProps {
 }
 
 export interface TimelineProps extends BlockProps {
+  boxRadius?: Radius
   markdown?: boolean
   events: {
     date: string

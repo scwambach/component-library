@@ -109,7 +109,6 @@
       padding: $size-24;
       box-shadow: $box-shadow-2;
       width: calc(50% - ($size-48 + 0.1rem));
-      @include radius8;
 
       @media screen and (min-width: (
             $sm,

@@ -4,13 +4,14 @@ import { BlockWrapper, Container, Grid } from '../utility'
 import { ColumnSize, StatsProps } from '../../utils/types'
 
 export const Stats = ({
+  boxRadius,
   className,
   componentId,
   container,
   gap = 'xs',
   heading,
-  items,
   headingLevel,
+  items,
   subheading,
   testId,
   ...props
@@ -35,7 +36,7 @@ export const Stats = ({
         )}
         <Grid columns={columns as ColumnSize} gap={gap}>
           {items?.map((item, index) => (
-            <Stat key={index + item.value} {...item} />
+            <Stat key={index + item.value} {...item} boxRadius={boxRadius} />
           ))}
         </Grid>
       </Container>

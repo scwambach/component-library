@@ -12,6 +12,7 @@ type Story = StoryObj<typeof TabsItem>
 
 export const Primary: Story = {
   args: {
+    boxRadius: 8,
     items: [
       {
         label: 'Tab 1',
@@ -31,6 +32,7 @@ export const Primary: Story = {
 
 export const Secondary: Story = {
   args: {
+    boxRadius: 8,
     items: [
       {
         label: 'Tab 1',
@@ -51,6 +53,7 @@ export const Secondary: Story = {
 
 export const Tertiary: Story = {
   args: {
+    boxRadius: 8,
     items: [
       {
         label: 'Tab 1',

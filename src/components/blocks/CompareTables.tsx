@@ -5,14 +5,15 @@ import { CompareTablesProps } from '../../utils/types'
 // TODO: Create CompareTables tests and stories
 
 export const CompareTables = ({
+  boxRadius,
   className,
-  testId,
   componentId,
   heading,
-  subheading,
   headingLevel,
   items,
   overallTheme,
+  subheading,
+  testId,
   ...props
 }: CompareTablesProps) => {
   return (
@@ -40,6 +41,7 @@ export const CompareTables = ({
           {items.map((item) => (
             <CompareTable
               {...item}
+              boxRadius={boxRadius}
               key={item._key}
               theme={overallTheme || item.theme}
             />

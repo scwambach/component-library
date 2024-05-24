@@ -14,6 +14,7 @@ export const Events = ({
   headingLevel,
   subheading,
   testId,
+  boxRadius,
   ...props
 }: EventsProps) => {
   return (
@@ -35,7 +36,12 @@ export const Events = ({
           {items.map((item, index) => (
             <Fragment key={item.title + index}>
               {index > 0 && <Spacer size={1} divide />}
-              <Event className="event" key={item.date + item.title} {...item} />
+              <Event
+                className="event"
+                key={item.date + item.title}
+                {...item}
+                boxRadius={boxRadius}
+              />
             </Fragment>
           ))}
         </Flex>

@@ -4,6 +4,7 @@ import { BlockWrapper, Container, Grid } from '../utility'
 import { PeopleProps } from '../../utils/types'
 
 export const People = ({
+  boxRadius,
   className,
   columns = 3,
   componentId,
@@ -17,7 +18,7 @@ export const People = ({
   ...props
 }: PeopleProps) => {
   const renderedPeople = items.map((item, index) => {
-    return <Person key={index} {...item} />
+    return <Person key={index} {...item} boxRadius={boxRadius} />
   })
 
   return (

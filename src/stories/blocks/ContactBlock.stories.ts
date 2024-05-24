@@ -16,7 +16,9 @@ export const ContactBlock: Story = {
   args: {
     heading: 'Contact Us',
     headingLevel: 2,
+    boxRadius: 12,
     mapStyle,
+    googleMapsApiKey: 'AIzaSyCWdtdxYMqxuFjeCYJ9Fe1mAIL3KdPybg8',
     subheading: "We're here to help",
     marker: {
       lat: 40.7128,
