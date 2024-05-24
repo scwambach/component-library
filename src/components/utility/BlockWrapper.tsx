@@ -1,4 +1,4 @@
-import { BlockProps, Elements } from '@utils/types'
+import { BlockProps, Elements } from '.././../utils/types'
 import { Box } from './Box'
 import { ReactNode } from 'react'
 import { ImageObject } from '../modules'
