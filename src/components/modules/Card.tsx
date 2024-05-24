@@ -7,6 +7,7 @@ import { compileAuthorNames } from '../../utils/compileAuthorNames'
 
 export const Card = ({
   authors,
+  boxRadius,
   className,
   componentId,
   date,
@@ -17,7 +18,6 @@ export const Card = ({
   links,
   markdown,
   tags,
-  boxRadius,
   testId,
   title,
 }: CardProps) => {
@@ -43,7 +43,7 @@ export const Card = ({
         </Box>
       )}
       {image && !href && (
-        <Box overflow className="image">
+        <Box overflow className="image" radius={boxRadius}>
           <ImageObject {...image} isBackground />
         </Box>
       )}
