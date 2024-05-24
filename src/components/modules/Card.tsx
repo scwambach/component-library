@@ -4,6 +4,7 @@ import { Button, ImageObject, Avatar, Tag, LinkObject } from '../modules'
 import { Heading, Markdown, Flex, Box, IconSelector, Spacer } from '../utility'
 import dayjs from 'dayjs'
 import { compileAuthorNames } from '../../utils/compileAuthorNames'
+import { Radius } from '../../utils/types/types'
 
 export const Card = ({
   authors,
@@ -21,6 +22,8 @@ export const Card = ({
   testId,
   title,
 }: CardProps) => {
+  const rounded =
+    boxRadius === 4 ? boxRadius : boxRadius ? boxRadius - 4 : undefined
   return (
     <Box
       componentId={componentId}
@@ -36,14 +39,14 @@ export const Card = ({
         </Flex>
       )}
       {image && href && (
-        <Box overflow className="image">
+        <Box overflow className="image" radius={rounded as Radius}>
           <LinkObject href={href}>
             <ImageObject {...image} isBackground />
           </LinkObject>
         </Box>
       )}
       {image && !href && (
-        <Box overflow className="image" radius={boxRadius}>
+        <Box overflow className="image" radius={rounded as Radius}>
           <ImageObject {...image} isBackground />
         </Box>
       )}

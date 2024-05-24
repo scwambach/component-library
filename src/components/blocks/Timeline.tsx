@@ -2,7 +2,7 @@ import { ImageObject, SectionHeading } from '../modules'
 import { Box, Container, Flex, Markdown, Portable } from '../utility'
 import { TimelineProps } from '../../utils/types'
 import dayjs from 'dayjs'
-import { Radius } from '@utils/types/types'
+import { Radius } from '../../utils/types/types'
 
 export const Timeline = ({
   boxRadius,
