@@ -17,6 +17,7 @@ import {
   Colors,
   ColumnSize,
   ContainerClasses,
+  Elements,
   Gaps,
   HeadingLevel,
   Themes,
@@ -139,7 +140,7 @@ export interface QuoteProps extends ComponentProps {
 
 export interface RichTextProps extends ComponentProps {
   centered?: boolean
-  elementTag?: keyof JSX.IntrinsicElements
+  elementTag?: Elements
   column2Copy?: string | any[]
   column3Copy?: string | any[]
   column4Copy?: string | any[]

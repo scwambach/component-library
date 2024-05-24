@@ -1,11 +1,11 @@
-import { BlockProps } from '@utils/types'
+import { BlockProps, Elements } from '@utils/types'
 import { Box } from './Box'
 import { ReactNode } from 'react'
 import { ImageObject } from '../modules'
 
 interface BlockWrapperProps extends BlockProps {
   children?: ReactNode
-  elementTag?: keyof JSX.IntrinsicElements
+  elementTag?: Elements
 }
 
 export const BlockWrapper = ({
