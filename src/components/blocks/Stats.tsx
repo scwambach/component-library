@@ -1,8 +1,7 @@
 import { Stat } from '../modules'
 import { SectionHeading } from '../modules/SectionHeading'
-import { Container, Grid } from '../utility'
+import { BlockWrapper, Container, Grid } from '../utility'
 import { ColumnSize, StatsProps } from '../../utils/types'
-import { BlockWrapper } from '@components/utility/BlockWrapper'
 
 export const Stats = ({
   className,

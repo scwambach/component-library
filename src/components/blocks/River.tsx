@@ -1,7 +1,14 @@
 import { Button, ImageObject, VideoBlock } from '../modules'
-import { Box, Container, Flex, Heading, Markdown, Portable } from '../utility'
+import {
+  BlockWrapper,
+  Box,
+  Container,
+  Flex,
+  Heading,
+  Markdown,
+  Portable,
+} from '../utility'
 import { RiverProps } from '../../utils/types'
-import { BlockWrapper } from '@components/utility/BlockWrapper'
 
 export const River = ({
   className,

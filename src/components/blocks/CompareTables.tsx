@@ -1,7 +1,6 @@
 import { CompareTable, SectionHeading } from '../modules'
-import { Container, Flex } from '../utility'
+import { BlockWrapper, Container, Flex } from '../utility'
 import { CompareTablesProps } from '../../utils/types'
-import { BlockWrapper } from '@components/utility/BlockWrapper'
 
 // TODO: Create CompareTables tests and stories
 

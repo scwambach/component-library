@@ -1,7 +1,6 @@
 import { Button, SectionHeading } from '../modules'
-import { Container, Flex } from '../utility'
+import { BlockWrapper, Container, Flex } from '../utility'
 import { ButtonRowProps } from '../../utils/types'
-import { BlockWrapper } from '@components/utility/BlockWrapper'
 
 // TODO: Create ButtonRow tests
 

@@ -1,10 +1,9 @@
 import { Event } from '../modules/Event'
 import { SectionHeading } from '../modules/SectionHeading'
-import { Container, Flex } from '../utility'
+import { BlockWrapper, Container, Flex } from '../utility'
 import { Spacer } from '../utility'
 import { EventsProps } from '../../utils/types'
 import { Fragment } from 'react'
-import { BlockWrapper } from '@components/utility/BlockWrapper'
 
 export const Events = ({
   className,

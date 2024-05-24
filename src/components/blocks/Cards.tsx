@@ -7,7 +7,7 @@ import { CaretLeft, CaretRight } from '@phosphor-icons/react'
 import { CardsProps } from '../../utils/types'
 import { useEffect, useState } from 'react'
 import ReactPaginate from 'react-paginate'
-import { BlockWrapper } from '@components/utility/BlockWrapper'
+import { BlockWrapper } from '../utility'
 
 export const Cards = ({
   button,

@@ -1,7 +1,7 @@
 import { BlockProps } from '@utils/types'
 import { Box } from './Box'
 import { ReactNode } from 'react'
-import { ImageObject } from '@components/modules'
+import { ImageObject } from '../modules'
 
 interface BlockWrapperProps extends BlockProps {
   children?: ReactNode

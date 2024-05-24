@@ -1,6 +1,5 @@
-import { Container, Grid, Markdown, Portable } from '../utility'
+import { BlockWrapper, Container, Grid, Markdown, Portable } from '../utility'
 import { ColumnSize, RichTextProps } from '../../utils/types'
-import { BlockWrapper } from '@components/utility/BlockWrapper'
 
 // TODO: Create RichText tests and stories
 

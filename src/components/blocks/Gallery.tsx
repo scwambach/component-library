@@ -1,10 +1,9 @@
 'use client'
 import { Button, ImageObject, GalleryModal } from '../modules'
 import { SectionHeading } from '../modules/SectionHeading'
-import { Container, Grid } from '../utility'
+import { BlockWrapper, Container, Grid } from '../utility'
 import { GalleryProps } from '../../utils/types'
 import { useEffect, useState } from 'react'
-import { BlockWrapper } from '@components/utility/BlockWrapper'
 
 export const Gallery = ({
   className,

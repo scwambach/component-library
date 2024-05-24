@@ -1,8 +1,7 @@
 import { Person } from '../modules'
 import { SectionHeading } from '../modules/SectionHeading'
-import { Container, Grid } from '../utility'
+import { BlockWrapper, Container, Grid } from '../utility'
 import { PeopleProps } from '../../utils/types'
-import { BlockWrapper } from '@components/utility/BlockWrapper'
 
 export const People = ({
   className,

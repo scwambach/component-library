@@ -1,8 +1,7 @@
 import { Button } from '../modules'
 import { SectionHeading } from '../modules/SectionHeading'
-import { Container } from '../utility'
+import { BlockWrapper, Container } from '../utility'
 import { FormProps } from '../../utils/types'
-import { BlockWrapper } from '@components/utility/BlockWrapper'
 
 const Form = ({
   children,
