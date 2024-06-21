@@ -1,16 +1,16 @@
 'use client'
-import { Markdown } from '../utility'
+import { Container, Markdown } from '../utility'
 
 export const Footer = ({ copy, title }: { copy?: string; title: string }) => {
   const year = new Date().getFullYear()
   return (
     <footer className="wdrlscw-footer">
-      <div className="container">
+      <Container>
         <p>
           &copy; {year} {title}
         </p>
         {copy && <Markdown>{copy}</Markdown>}
-      </div>
+      </Container>
     </footer>
   )
 }

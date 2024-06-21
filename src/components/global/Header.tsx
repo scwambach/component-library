@@ -1,6 +1,6 @@
 'use client'
 import { Avatar, Button, Dropdown, LinkObject } from '../modules'
-import { Container, Flex, Heading } from '../utility'
+import { Box, Container, Flex, Heading } from '../utility'
 import { ButtonTypes, GlobalProps } from '../../utils/types'
 import { useState } from 'react'
 import { signIn, signOut, useSession } from 'next-auth/react'
@@ -17,7 +17,7 @@ export const Header = ({
   const [menuOpen, setMenuOpen] = useState(false)
   const { data: session } = useSession()
   return (
-    <header className="wdrlscw-header">
+    <Box elementTag="header" className="wdrlscw-header">
       <Container>
         <Flex
           ariaLabel="Main Navigation"
@@ -90,12 +90,12 @@ export const Header = ({
             <span />
             <span />
             <span />
-            <div className="srOnly">
+            <Box className="srOnly">
               <span>Toggle Menu</span>
-            </div>
+            </Box>
           </Button>
         </Flex>
       </Container>
-    </header>
+    </Box>
   )
 }

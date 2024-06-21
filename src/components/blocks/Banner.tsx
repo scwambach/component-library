@@ -37,7 +37,7 @@ export const Banner = ({
         justifyContent={alone ? 'flex-start' : 'center'}
         alignItems={alone ? 'flex-start' : 'center'}
       >
-        <div>
+        <Box>
           {crumbs && (crumbs.items || crumbs.current) && (
             <Breadcrumbs current={crumbs.current} crumbs={crumbs.items} />
           )}
@@ -73,11 +73,11 @@ export const Banner = ({
             />
           )}
           {links && (
-            <div className="links">
+            <Box className="links">
               {links.map((link, index) => (
                 <Button key={index} {...link} />
               ))}
-            </div>
+            </Box>
           )}
           {authors && (
             <Flex
@@ -106,7 +106,7 @@ export const Banner = ({
               {<p className="authorNames">{compileAuthorNames(authors)}</p>}
             </Flex>
           )}
-        </div>
+        </Box>
       </Flex>
 
       {foregroundMedia && (

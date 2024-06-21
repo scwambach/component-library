@@ -45,13 +45,13 @@ export const Timeline = ({
                     </p>
                     <p className={`title `}>{event.title}</p>
                     {event.description && (
-                      <div className="description">
+                      <Box className="description">
                         {markdown ? (
                           <Markdown>{event.description as string}</Markdown>
                         ) : (
                           <Portable content={event.description as any[]} />
                         )}
-                      </div>
+                      </Box>
                     )}
                   </Box>
                   {event.image && (

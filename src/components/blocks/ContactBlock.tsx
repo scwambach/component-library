@@ -30,7 +30,7 @@ export const ContactBlock = (props: ContactBlockProps) => {
       <Container containerClass={container}>
         <Flex fill gap="md" alignItems="center" justifyContent="center">
           {(heading || subheading) && (
-            <div>
+            <Box>
               <SectionHeading
                 heading={heading}
                 subheading={subheading}
@@ -38,33 +38,33 @@ export const ContactBlock = (props: ContactBlockProps) => {
               />
               <Flex className="infoBox" direction="column" gap="sm">
                 {information.address && (
-                  <div>
+                  <Box>
                     <Heading nonHeadingElement="p">Get Directions:</Heading>
                     <LinkObject
                       href={`https://www.google.com/maps/place/${information.address?.street}+${information.address?.city}+${information.address?.state}+${information.address?.zip}/`}
                     >
                       {`${information.address?.street}, ${information.address?.city}, ${information.address?.state} ${information.address?.zip}`}
                     </LinkObject>
-                  </div>
+                  </Box>
                 )}
                 {information.phone && (
-                  <div>
+                  <Box>
                     <Heading nonHeadingElement="p">Phone:</Heading>
                     <LinkObject href={`tel:${information.phone}`}>
                       {information.phone}
                     </LinkObject>
-                  </div>
+                  </Box>
                 )}
                 {information.email && (
-                  <div>
+                  <Box>
                     <Heading nonHeadingElement="p">Email:</Heading>
                     <LinkObject href={`mailto:${information.email}`}>
                       {information.email}
                     </LinkObject>
-                  </div>
+                  </Box>
                 )}
                 {information.hours && (
-                  <div>
+                  <Box>
                     <Heading nonHeadingElement="p">Hours:</Heading>
 
                     <Flex
@@ -79,10 +79,10 @@ export const ContactBlock = (props: ContactBlockProps) => {
                         </li>
                       ))}
                     </Flex>
-                  </div>
+                  </Box>
                 )}
               </Flex>
-            </div>
+            </Box>
           )}
           {marker && (
             <Box overflow radius={boxRadius}>

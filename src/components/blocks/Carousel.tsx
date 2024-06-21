@@ -2,7 +2,7 @@
 import { CarouselProps } from '../../utils/types'
 import { Banner } from './Banner'
 import { Dots } from '../modules/Dots'
-import { Flex } from '../utility'
+import { Box, Flex } from '../utility'
 import { useEffect, useState } from 'react'
 
 // TODO: Create tests
@@ -28,9 +28,9 @@ export const Carousel = ({
   }, [items.length])
 
   return (
-    <div
-      id={componentId}
-      data-testid={testId}
+    <Box
+      componentId={componentId}
+      testId={testId}
       className={`wdrlscw-carousel${className ? ` ${className}` : ''}`}
     >
       <Flex
@@ -50,6 +50,6 @@ export const Carousel = ({
         activeIndex={activeIndex}
         setActiveIndex={setActiveIndex}
       />
-    </div>
+    </Box>
   )
 }
