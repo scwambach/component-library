@@ -68,7 +68,7 @@ export const River = ({
                       <Portable content={item.description as any[]} />
                     )}
                     {item.links && item.links.length > 0 && (
-                      <div className="links">
+                      <Box className="links">
                         {item.links.map((link, index) => (
                           <Button
                             theme={theme}
@@ -76,7 +76,7 @@ export const River = ({
                             {...link}
                           />
                         ))}
-                      </div>
+                      </Box>
                     )}
                   </Flex>
                 </Flex>
