@@ -2,7 +2,6 @@ import { Banner } from '@components/blocks'
 import { PageLayout as PageLayoutItem } from '@components/global/PageLayout'
 import type { Meta, StoryObj } from '@storybook/react'
 import { GlobalProps } from '@utils/types'
-import { SessionProvider } from 'next-auth/react'
 
 const meta: Meta<typeof PageLayoutItem> = {
   title: 'Components/Global',
@@ -53,13 +52,4 @@ export const PageLayout: Story = {
       ] as GlobalProps['navigation'],
     },
   },
-  decorators: [
-    (Story) => {
-      return (
-        <SessionProvider>
-          <Story />
-        </SessionProvider>
-      )
-    },
-  ],
 }
