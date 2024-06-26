@@ -1,6 +1,6 @@
 'use client'
 import { Button, Dropdown, LinkObject } from '../modules'
-import { Container, Flex, Heading } from '../utility'
+import { Box, Container, Flex, Heading } from '../utility'
 import { ButtonTypes, GlobalProps } from '../../utils/types'
 import { useState } from 'react'
 
