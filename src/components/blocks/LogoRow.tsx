@@ -20,10 +20,10 @@ export const LogoRow = ({
       <Flex justifyContent="center" alignItems="center" gap="xl">
         {items.map((item) => {
           return (
-            <div key={item.title}>
+            <Box key={item.title}>
               <ImageObject {...item.image} alt={item.title} />
-              <div className="srOnly">{item.title}</div>
-            </div>
+              <Box className="srOnly">{item.title}</Box>
+            </Box>
           )
         })}
       </Flex>

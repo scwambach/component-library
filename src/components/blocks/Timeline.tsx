@@ -16,6 +16,7 @@ export const Timeline = ({
   testId,
   markdown,
 }: TimelineProps) => {
+  // const rounded = boxRadius === 4 ? boxRadius : boxRadius ? boxRadius - 4 : undefined
   const rounded =
     boxRadius === 4 ? boxRadius : boxRadius ? boxRadius - 4 : undefined
   return (
@@ -45,13 +46,13 @@ export const Timeline = ({
                     </p>
                     <p className={`title `}>{event.title}</p>
                     {event.description && (
-                      <div className="description">
+                      <Box className="description">
                         {markdown ? (
                           <Markdown>{event.description as string}</Markdown>
                         ) : (
                           <Portable content={event.description as any[]} />
                         )}
-                      </div>
+                      </Box>
                     )}
                   </Box>
                   {event.image && (

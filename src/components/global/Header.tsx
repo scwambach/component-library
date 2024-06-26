@@ -15,7 +15,7 @@ export const Header = ({
 }) => {
   const [menuOpen, setMenuOpen] = useState(false)
   return (
-    <header className="wdrlscw-header">
+    <Box elementTag="header" className="wdrlscw-header">
       <Container>
         <Flex
           ariaLabel="Main Navigation"
@@ -68,12 +68,12 @@ export const Header = ({
             <span />
             <span />
             <span />
-            <div className="srOnly">
+            <Box className="srOnly">
               <span>Toggle Menu</span>
-            </div>
+            </Box>
           </Button>
         </Flex>
       </Container>
-    </header>
+    </Box>
   )
 }

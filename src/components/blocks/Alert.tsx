@@ -1,6 +1,6 @@
 'use client'
 import { Button } from '../modules'
-import { IconSelector } from '../utility'
+import { Box, IconSelector } from '../utility'
 import { AlertProps } from '../../utils/types'
 import { useEffect, useState } from 'react'
 import * as Icon from '@phosphor-icons/react'
@@ -41,9 +41,9 @@ export const Alert = ({
   }
 
   return (
-    <div
-      data-testid={testId}
-      id={componentId}
+    <Box
+      testId={testId}
+      componentId={componentId}
       className={`wdrlscw-alert ${type}${className ? ` ${className}` : ''}${
         loading || remove ? ' hide' : ''
       }`}
@@ -71,6 +71,6 @@ export const Alert = ({
           <IconSelector icon="X" size={18} />
         </Button>
       )}
-    </div>
+    </Box>
   )
 }
