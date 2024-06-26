@@ -16,6 +16,7 @@ export const Timeline = ({
   testId,
   markdown,
 }: TimelineProps) => {
+  // const rounded = boxRadius === 4 ? boxRadius : boxRadius ? boxRadius - 4 : undefined
   const rounded =
     boxRadius === 4 ? boxRadius : boxRadius ? boxRadius - 4 : undefined
   return (
